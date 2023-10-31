@@ -1,0 +1,23 @@
+
+// Переменные
+@import "abstracts/variables";
+// Миксины
+@import "abstracts/mixins";
+// Функции
+@import "abstracts/functions";
+// Анимация
+@import "base/animation";
+// Настройки
+@import "base/base";
+// Типографика
+@import "base/typography";
+// Утилиты
+@import "base/utilities";
+// Компоненты
+
+@import "layout/header";
+@import "layout/footer";
+@import "layout/grid";
+@import "layout/navigation";
+
+@import "pages/home";
