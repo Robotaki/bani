@@ -1,4 +1,5 @@
-
+// Обнуляющий стиль 
+@import "abstracts/reset";
 // Переменные
 @import "abstracts/variables";
 // Миксины
@@ -21,3 +22,4 @@
 
 
 @import "pages/home";
+
