@@ -1,5 +1,5 @@
 // Обнуляющий стиль 
-@import "abstracts/reset";
+@import "reset";
 // Переменные
 @import "abstracts/variables";
 // Миксины
@@ -14,12 +14,15 @@
 @import "base/typography";
 // Утилиты
 @import "base/utilities";
-// Компоненты
 
-@import "layout/header";
+// Компоненты
 @import "layout/footer";
 @import "layout/grid";
+// Бургер
+@import "layout/navigation";
+@import "layout/header";
 
 
 @import "pages/home";
+
 
