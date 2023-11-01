@@ -1,17 +1,22 @@
 // Цвет текста
-
+$color-text-dark: rgba(0, 0, 0, 1);
 
 // Основные цвета сайта
+$bg-color-white: rgba(255, 255, 255, 1);
+$color-dark: rgba(0, 0, 0, 1);
+$color-white: rgba(255, 255, 255, 1);
 
-
-// Черный и белый цвет сайта
-
+// Цвет линий
+$line-color-small: rgba(215, 175, 109, 1);
+$line-color-big: rgba(179, 135, 51, 1);
 
 // Тень для кнопок
-
-
-// Отступы
-
+$button-shadow: -10px 12px 12px 2px rgba(0, 0, 0, 0.25);
 
 // Типографика
-
+$fz-h2: 2rem;
+$ff-inter: 'Inter', sans-serif;
+$ff-kelly-slab: 'Kelly Slab', sans-serif;
+$ff-montserrat: 'Montserrat', sans-serif;
+$ff-play: 'Play', sans-serif;
+$ff-raleway: 'Raleway', sans-serif;
