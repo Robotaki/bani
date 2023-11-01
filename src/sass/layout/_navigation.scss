@@ -20,8 +20,8 @@
         border-radius: 50%;
         background: transparent;
         position: fixed;
-        top: 1rem;
-        right: 1rem;
+        top: 11rem;
+        right: 11rem;
         z-index: 100;
         transition: all .2s;
         /* transform: scale(80); */
@@ -73,6 +73,7 @@
     &__toggle:checked ~ &__background {
         background: rgba(255, 255, 255, 1);
         transform: scale(80);
+        
     }
     &__toggle:checked ~ &__nav {
         width: 100%;
