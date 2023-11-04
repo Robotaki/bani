@@ -5,6 +5,10 @@
     background: rgba(217, 217, 217, 0.30);
     box-shadow: 10px 7px 18px 0px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(7.5px);
+    &__title {
+        padding-left: 1.7rem;
+        
+    }
     &__items {
         padding-top: 2rem;
         display: flex;
@@ -15,12 +19,23 @@
         width: 41.3%;
         height: 0.2rem;
     }
+    &__line-top_1 {
+        width: 60.3%;
+    }
+    &__line-top_2 {
+        width: 52.3%;
+    }
+    &__line-top_3 {
+        width: 75.3%;
+    }
     &__line-left {
         margin: -.9rem 1rem 0 0;
         width: 0.2rem;
         height: 3.4rem;
     }
     &__text {
+        font-family: $ff-gotham-pro;
+        font-weight: 400;
         font-size: 1.4rem;
         width: 77.2%;
     }
