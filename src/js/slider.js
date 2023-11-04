@@ -1,6 +1,7 @@
 $(document).ready(function() {
   $('.slider').slick({
     arrows: true,
-    slidesToShow: 1
+    variableWidth: true,
+    slidesToShow: 1,
   });
 });
