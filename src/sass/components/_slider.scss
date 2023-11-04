@@ -1,44 +1,60 @@
 .slider {
     position: relative;
-    padding: 0 2.5rem 0 2rem;
-    
+    margin: 0 auto;
+    min-width: 337px;
     .slick-arrow {
         position: absolute;
         top: 50%;
         z-index: 10;
         font-size: 0;
-        margin-top: -33.5px;
-        width: 39px;
-        height: 67px;
+        margin-top: -9rem;
+        width: 11.2%;
+        height: 10%;
+        object-fit: cover;
     }
     .slick-prev {
-        left: 0;
-        background: url('../../img/mobile/icon/arrow-left.svg') 0 0 / 100% no-repeat;
+        left: 3.5%;
+        background: url('../../img/mobile/icon/arrow-left.svg') 0 0 no-repeat;
+        
     }
     .slick-next {
-        right: 0;
-        background: url('../../img/mobile/icon/arrow-right.svg') 0 0 / 100% no-repeat;
+        right: 0%;
+        background: url('../../img/mobile/icon/arrow-right.svg') 0 0 no-repeat;
+    }
+    &__item {
+        width: 337px;
+        padding: 0 2.5rem 3rem 2rem;
+        position: relative;
+        overflow: hidden;
     }
     &__line_top {
-        margin-left: 3.5rem;
-        width: 79.1%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
         height: 0.3rem;
         background: $line-color-big;
     }
+    &__line-top_2 {
+        width: 100%;
+    }
     &__row {
         position: relative;
-        width: 232px;
+        width: 79.4%;
         margin: 0 auto;
     }
+    &__img {
+        max-width: 100%;
+    }
     &__promotion {
-        padding: 1.6rem 2.1rem;
+        padding: 1.8rem 2.1rem;
         position: absolute;
         top: 50%;
-        right: -.4rem;
+        right: 0;
         background-color: $line-color-big;
         text-align: center;
-        width: 9.6rem;
-        height: 4.9rem;
+        width: 41.5%;
+        height: 24.2%;
         span {
             color: $color-dark;
             font-size: 1.4rem;
@@ -46,9 +62,11 @@
         }
     }
     &__line_rigth {
-        margin-right: -.4rem;
+        position: absolute;
+        top: 0;
+        right: 0;
         width: .4rem;
-        height: 11.7rem;
+        height: 50.1%;
         background: $line-color-big;
     }
     &__line {
@@ -57,4 +75,39 @@
         height: 0.3rem;
         background: rgba(0, 0, 0, 1);
     }
+    &__line_2 {
+        margin-top: 0;
+        margin-bottom: 1.9rem;
+    }
+    &__title {
+        margin-bottom: 2.7rem;
+    }
+    &__title_2 {
+        font-size: 1.6rem;
+        margin: .9rem auto .8rem;
+        width: 201px;
+        line-height: 120%;
+    }
+    &__title_suptitle {
+        margin-bottom: .5rem;
+        padding-left: 2.4rem;
+        text-align: left;
+    }
+    &__text {
+        margin: 0 auto 2rem;
+        font-family: $ff-gotham-pro;
+        font-size: 1.3rem;
+        width: 283px;
+    }
+    &__text_width {
+        margin-bottom: 1.5rem;
+        font-family: $ff-raleway;
+        font-size: 1rem;
+        text-align: left;
+        width: 304px;
+    }
+    &__text-last {
+        margin-bottom: 5.1rem;
+    }
+    
 }
