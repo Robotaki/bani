@@ -7,3 +7,9 @@
 .line-small_light {
     background: $line-color-small;
 }
+.slick-list {
+    overflow: hidden;
+}
+.slick-track {
+    display: flex;
+}

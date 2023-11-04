@@ -1,3 +1,6 @@
-$(document).ready(function(){
-    $('.slider').slick();
+$(document).ready(function() {
+  $('.slider').slick({
+    arrows: true,
+    slidesToShow: 1
+  });
 });
