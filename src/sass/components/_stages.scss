@@ -1,0 +1,100 @@
+.stages {
+    &__title {
+        padding-left: 2.3rem;
+        margin-bottom: 2.6rem;
+    }
+    &__item {
+        padding-bottom: 2.7rem;
+    }
+    &__item:nth-child(3) {
+        padding-bottom: .9rem;
+    }
+    &__item:nth-child(4) {
+        padding-bottom: 4.41rem;
+    }
+    &__item:last-child {
+        &::after {
+            margin-top: 1.57rem;
+            content: '';
+            display: block;
+            width: 31.5rem;
+            height: 1px;
+            background-color: rgba(0, 0, 0, .4);
+        }
+    }
+    &__paragraph {
+        padding: 2.1rem 1.2rem 1.2rem;
+        border: 1px solid rgba(0, 0, 0, .4);
+        border-left: none;
+        span {
+            display: block;
+        }
+    }
+    &__number {
+        // font-family: $ff; Жду шрифт
+        font-size: 2rem;
+        -webkit-text-stroke: 1px rgba(0, 0, 0, .4);
+        color: transparent;
+        background-clip: text;
+        -webkit-background-clip: text;
+    }
+    &__stage {
+        margin: -.6rem 0 0 1rem;
+        font-family: $ff-montserrat;
+        font-size: 1.6em;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    &__subtitle {
+        margin-left: .9rem;
+        font-family: $ff-gotham-pro;
+        font-size: 1.9rem;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    &__subtitle::before {
+        content: '';
+        margin: 0 0 2.1rem -.9rem;
+        display: block;
+        width: 23.5rem;
+        height: 1px;
+        background-color: rgba(0, 0, 0, .4);
+    }
+    &__subtitle_width-2 {
+        width: 35.9%;
+    }
+    &__subtitle_width-2::before {
+        margin-bottom: 1rem;
+    }
+    &__subtitle_width-3 {
+        width: 46%;
+    }
+    &__subtitle_width-3::before {
+        margin-bottom: 1.45rem;
+    }
+    &__subtitle_width-4::before {
+        margin-bottom: 1.43rem;
+    }
+    &__subtitle_width-5::before {
+        margin-bottom: 2.88rem;
+    }
+    &__text {
+        width: 90.2%;
+        padding: 1.25rem 1.1rem 0 1.5rem;
+        font-size: 1.4rem;
+        font-family: $ff-gotham-pro;
+        letter-spacing: -.28px;
+    }
+    &__text_width-2 {
+        width: 90.8%;
+    }
+    &__text_width-3 {
+        width: 92.6%;
+    }
+    &__text_width-4 {
+        width: 88.7%;
+    }
+    &__text_width-5 {
+        width: 91.5%;
+    }
+}
