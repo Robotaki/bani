@@ -1,0 +1,29 @@
+.options {
+    &__items {
+        display: grid;
+        gap: 4.5rem 1.7rem;
+        grid-template-columns: 1fr 1fr;
+    }
+    &__item {
+        background-color: rgba(25, 24, 22, 1);
+        padding-bottom: 1.7rem;
+    }
+    &__img {
+        max-width: 100%;
+    }
+    &__paragraph {
+        padding: 0 .3rem;
+        margin-top: 1.2rem;
+        font-family: $ff-gotham-pro;
+        font-size: 1rem;
+        font-weight: 700;
+        color: rgba(252, 239, 239, 1);
+    }
+    &__paragraph:last-child {
+        font-size: 1.1rem;
+    }
+    &__btn {
+        display: block;
+        margin: 6rem auto 0;
+    }
+}
