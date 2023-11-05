@@ -1,0 +1,70 @@
+.questions {
+    display: flex;
+    flex-direction: column;
+    &__item:not(:last-child) {
+        margin-bottom: 2.26rem;
+    }
+    &__item {
+        overflow: hidden;
+    }
+    &__header {
+        padding: 2.2rem 2.6rem 1.3rem;
+        background: linear-gradient(90deg, rgb(129, 87, 9), rgb(187, 141, 55) 45%, rgb(255, 255, 255) 100%);
+        font-family: $ff-gotham-pro;
+        font-size: 1.3rem;
+        line-height: 96%;
+        cursor: pointer;
+        h3 {
+            margin: 0 auto;
+            font-weight: 700;
+        }   
+    }
+    &__header_width-3 {
+        h3 {
+            width: 91.7%;
+        }
+    }
+    &__header_width-4 {
+        h3 {
+            margin: 0 auto;
+            width: 83.7%;
+        }
+    }
+    &__header_width-5 {
+        h3 {
+            margin: 0 auto;
+            width: 75.7%;
+        }
+    }
+    &__header_width-6 {
+        h3 {
+            margin: 0 auto;
+            width: 69.7%;
+        }
+    }
+    &__arrow {
+        margin-top: 1.4rem;
+        img {
+            transform: rotate(180deg);
+            transition: transform .2s ease-in-out;
+        }
+    }
+    
+    .active &__arrow {
+        img {
+            transform: rotate(0deg);
+        }
+    }
+    &__content {
+        padding: 0 2rem 0;
+        max-height: 0; 
+        overflow: hidden;
+        transition: max-height .4s ease; 
+        p {
+            margin-top: 1rem;
+        }
+    }
+    .active &__content {
+        max-height: 1000px; 
+    }
+}
