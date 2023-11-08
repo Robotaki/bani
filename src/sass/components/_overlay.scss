@@ -1,0 +1,59 @@
+.overlay {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    display: none;
+    .popup-2 {
+        position: absolute;
+        z-index: 1;
+        width: 30rem;
+        height: 22rem;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        padding: 4rem;
+        background-color: rgba(37, 41, 44, 1);
+        border: solid 1px rgb(193, 177, 144);
+        img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+        }
+        h2 {
+            margin-top: 3rem;
+            text-align: center;
+            text-transform: uppercase;
+            color: #fff;
+        }
+        .close-popup {
+            position: absolute;
+            top: 1.5rem;
+            right: 1.5rem;
+            width: 2.3rem;
+            height: 2.3rem;
+            cursor: pointer;
+        }
+        .close-popup::before {
+            content: '';
+            background-color: rgb(193, 177, 144);
+            position: absolute;
+            height: 1px;
+            width: 3.1rem;
+            top: 1.1rem;
+            left: -4px;
+            transform: rotate(-45deg);
+        }
+        .close-popup::after {
+            content: '';
+            background-color: rgb(193, 177, 144);
+            position: absolute;
+            height: 1px;
+            width: 3.1rem;
+            top: 1.1rem;
+            left: -.4rem;
+            transform: rotate(45deg);
+        }
+    }
+}
