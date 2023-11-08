@@ -1,0 +1,20 @@
+.logotype {
+    display: flex;
+    &__img {
+        width: 5.7rem;
+        height: 5.7rem;
+    }
+    &__name {
+        margin-top: 2.6rem;
+        a {
+            display: inline-block;
+            color: $color-text-dark;
+            span {
+                display: block;
+                font-family: $ff-kelly-slab;
+                font-size: 1.6rem;
+            }
+        }
+        
+    }
+}

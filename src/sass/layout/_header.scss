@@ -25,16 +25,7 @@
         
     }
     &__logotype {
-        display: flex;
         margin-right: 6.5rem;
-    }
-    &__name-logo {
-        margin-top: 2.6rem;
-        span {
-            display: block;
-            font-family: $ff-kelly-slab;
-            font-size: 1.6rem;
-        }
     }
     &__link-phone {
         font-family: $ff-gotham-pro;
