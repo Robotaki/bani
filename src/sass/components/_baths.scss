@@ -2,6 +2,12 @@
     &__item:not(:last-child) {
         padding-bottom: 9rem;
     }
+    &__img {
+        
+        img {
+            width: 100%;
+        }
+    }
     &__desc {
         padding-left: 1.7rem;
         font-family: $ff-gotham-pro;
