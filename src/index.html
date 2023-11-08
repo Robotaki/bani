@@ -27,15 +27,14 @@
     </div>
     <header class="header">
         <div class="header__content">
-            <div class="header__logotype">
-                <img src="./img/mobile/icon/logotype.png" alt="Image: logotype">
-                <div class="header__name-logo">
-                    <span>ВАША</span>
-                    <span>БАНЯ</span>
+            <div class="header__logotype logotype">
+                <img class="logotype__img" src="./img/mobile/icon/logotype.png" alt="Image: logotype">
+                <div class="header__name-logo logotype__name">
+                    <a href="/"><span>ВАША</span><span>БАНЯ</span></a>
+                    
                 </div>
             </div>
             <a class="header__link-phone" href="tel:8 921 029 01 22">8 921 029 01 22</a>
-            
         </div>
         <!-- /.header__content -->
     </header>
@@ -598,11 +597,49 @@
             <!-- /.baths -->
         </section>
         <!-- /.section-baths -->
+        <section class="section-feedback">
+            <div class="feedback text-align-center">
+                <h3 class="feedback__title">Позвольте нам помочь Вам осуществить вашу мечту о собственной бане.</h3>
+                <p class="feedback__text">
+                    Свяжитесь с нами сегодня, чтобы обсудить ваш проект и начать строительство  идеальной бани.
+                </p>
+                <div class="feedback__group-icons">
+                    <a href="#"  class="feedback__link"><img class="feedback__icon" src="./img/mobile/icon/whatsapp.svg" alt="Icon: whatsapp"></a>
+                    <a href="#" class="feedback__link"><img class="feedback__icon" src="./img/mobile/icon/phone.svg" alt="Icon: phone"></a>
+                    <a href="#" class="feedback__link"><img class="feedback__icon" src="./img/mobile/icon/telegram.svg" alt="Icon: telegram"></a>
+                </div>
+                <form id="form" class="form feedback__form" name="form" action="send.php">
+                    <input autocomplete="on" id="phone" class="input feedback__input __req" type="tel" name="phone" placeholder="номер телефона">
+                    <input autocomplete="on" id="email" class="input feedback__input __req __email" type="email" name="email" placeholder="email">
+                    <textarea class="input feedback__input feedback__input_height" id="message" placeholder="Сообщение" name="message"></textarea>
+                    <button id="input__submit" class="input__submit feedback__btn btn" type="submit" name="submit" value="Отправить">Отправить</button>
+                </form>
+                <div id="overlay" class="overlay js-overlay-thank-you overlay-open">
+                    <div class="overlay__flex">
+                        <div class="popup-2 js-thank-you">
+                            <img src="./img/mobile/icon/checked.png" alt="checked">
+                            <h2>Спасибо !<br> Ваше сообщение отправлено</h2>
+                            <div class="close-popup js-close-thank-you"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="feedback__logotype logotype">
+                    <a href="/"><img class="feedback__img logotype__img" src="./img/mobile/icon/logotype.png" alt="Image: logotype"></a>
+                    <div class="feedback__name logotype__name">
+                        <a href="/"><span>ВАША</span><span>БАНЯ</span></a>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+        <!-- /.section-form -->
     </main>
     <footer class="footer">
 
     </footer>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./js/form.js"></script>
+    <script src="./js/formSend.js"></script>
     <script src="./js/slick.min.js"></script>
     <script src="./js/slider.js"></script>
     <script src="./js/reviews-slider.js"></script>
