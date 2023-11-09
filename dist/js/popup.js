@@ -17,3 +17,19 @@ closePopupButton.forEach(button => {
         popup.style.display = 'none';
     });
 });
+
+openPopupButton.forEach(div => {
+    div.addEventListener('click', () => {
+        const target = div.getAttribute('data-target');
+        const popup = document.getElementById(target);
+        popup.style.display = 'block';
+    });
+});
+
+closePopupButton.forEach(div => {
+    div.addEventListener('click', () => {
+        const target = div.getAttribute('data-target');
+        const popup = document.getElementById(target);
+        popup.style.display = 'none';
+    });
+});
