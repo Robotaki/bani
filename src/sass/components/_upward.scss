@@ -1,0 +1,19 @@
+.upward {
+    position: fixed;
+    bottom: 700px;
+    left: .714em;
+    width: 2rem;
+    height: 2rem;
+    background: url('../../img/mobile/icon/arrow__up.png');
+    background-size: cover;
+    z-index: 99;
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s;
+}
+.upward.active {
+    bottom: 1.428em;
+    visibility: visible;
+    opacity: 1;
+}
