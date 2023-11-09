@@ -8,6 +8,21 @@
     <title>Строительство бань</title>
 </head>
 <body>
+    <div class="upward" onclick="scrollTopTop()"></div>
+    <div class="vidgets">
+        <div class="whatsapp">
+            <div class="whatsapp__img">
+                <a class="whatsapp-mobile" href="https://wa.me/79673231722"><img class="vidgets-icon" src="./img/mobile/icon/whatsapp.png" alt="Icon: Whatsapp"></a>
+                <span class="flayer"></span>
+            </div>
+        </div>
+        <div class="phone">
+            <div class="phone__img">
+                <a class="phone-mobile" href="tel:+7 967 323 17 22"><img class="vidgets-icon" src="./img/mobile/icon/phone-call.png" alt="phone-call"></a>
+                <span class="flayer"></span>
+            </div>
+        </div>
+    </div>
     <div class="navigation">
         <input type="checkbox" class="navigation__toggle" id="navin-toggle">
         <label for="navin-toggle" class="navigation__button">
@@ -2809,9 +2824,12 @@
                 <div id="overlay" class="overlay js-overlay-thank-you overlay-open">
                     <div class="overlay__flex">
                         <div class="popup-2 js-thank-you">
-                            <img src="./img/mobile/icon/checked.png" alt="checked">
-                            <h2>Спасибо !<br> Ваше сообщение отправлено</h2>
-                            <div class="close-popup js-close-thank-you"></div>
+                            <img src="./img/mobile/icon/checked.svg" alt="checked">
+                            <span>сообщение отправлено</span>
+                            <p>
+                                Мы свяжемся с вами в ближайшее время
+                            </p>
+                            <a href="/" class="overlay__btn btn"><strong>На главную</strong></a>
                         </div>
                     </div>
                 </div>
@@ -2844,6 +2862,8 @@
         </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./js/scroll__up.js"></script>
+    <script src="./js/anchor.js"></script>
     <script src="./js/appearanceOfBlock.js"></script>
     <script src="./js/form.js"></script>
     <script src="./js/formSend.js"></script>
