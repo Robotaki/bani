@@ -1,29 +1,28 @@
 .slider {
     position: relative;
     margin: 0 auto;
-    min-width: 337px;
     .slick-arrow {
         position: absolute;
         top: 50%;
         z-index: 10;
         font-size: 0;
         margin-top: -9rem;
-        width: 11.2%;
-        height: 10%;
+        width: 6%;
+        height: 6%;
         object-fit: cover;
     }
     .slick-prev {
-        left: 3.5%;
+        left: 1.2rem;
         background: url('../../img/mobile/icon/arrow-left.svg') 0 0 no-repeat;
         
     }
     .slick-next {
-        right: 0%;
+        right: 1.2rem;
         background: url('../../img/mobile/icon/arrow-right.svg') 0 0 no-repeat;
     }
     &__item {
-        width: 337px;
-        padding: 0 2.5rem 3rem 2rem;
+        min-width: 33.7rem;
+        padding: 0 2.5rem 3rem 2.5rem;
         position: relative;
         overflow: hidden;
     }
@@ -40,31 +39,34 @@
     }
     &__row {
         position: relative;
-        width: 79.4%;
+        width: 23.1rem;
         margin: 0 auto;
     }
     &__img {
-        max-width: 100%;
+        display: block;
+        width: 23.2rem;
+        height: 20.4rem;
     }
     &__promotion {
         padding: 1.8rem 2.1rem;
         position: absolute;
         top: 50%;
-        right: 0;
+        right: -.1rem;
         background-color: $line-color-big;
         text-align: center;
-        width: 41.5%;
-        height: 24.2%;
+        width: 9.6rem;
+        height: 4.9rem;
         span {
             color: $color-dark;
             font-size: 1.4rem;
+            font-weight: 700;
             font-family: $ff-kelly-slab;
         }
     }
     &__line_rigth {
         position: absolute;
         top: 0;
-        right: 0;
+        right: -.1rem;
         width: .4rem;
         height: 50.1%;
         background: $line-color-big;
@@ -80,16 +82,19 @@
         margin-bottom: 1.9rem;
     }
     &__title {
+        margin: 0 auto;
+        width: 28.9rem;
         margin-bottom: 2.7rem;
     }
     &__title_2 {
         font-size: 1.6rem;
         margin: .9rem auto .8rem;
-        width: 201px;
+        width: 20.1rem;
         line-height: 120%;
     }
     &__title_suptitle {
-        margin-bottom: .5rem;
+        width: 30.4rem;
+        margin: 0 auto .5rem;
         padding-left: 2.4rem;
         text-align: left;
     }
@@ -97,17 +102,19 @@
         margin: 0 auto 2rem;
         font-family: $ff-gotham-pro;
         font-size: 1.3rem;
-        width: 283px;
+        width: 25rem;
     }
     &__text_width {
-        margin-bottom: 1.5rem;
-        font-family: $ff-raleway;
+        margin: 0 auto 1.5rem;
+        font-family: $ff-gotham-pro;
         font-size: 1rem;
         text-align: left;
-        width: 304px;
+        width: 30.4rem;
     }
     &__text-last {
         margin-bottom: 5.1rem;
     }
-    
+    &__btn {
+        display: inline-block;
+    }
 }
