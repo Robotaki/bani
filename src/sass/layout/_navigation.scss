@@ -52,13 +52,15 @@
         }
     }
     &__link {
+        width: 100%;
+        border-bottom: 1px solid #000;
         &:link, &:visited {
             font-size: 4rem;
-            color: $color-white;
+            color: $color-dark;
             letter-spacing: .5rem;
             text-decoration: none;
             text-transform: uppercase;
-            background: red;
+            
             background-size: 220%;
             padding: 1rem 2rem;
             transition: all .4s;
@@ -66,7 +68,7 @@
         }
         &:hover, &:active {
             background-position: 100%;
-            color: #000;
+            color: rgba(179, 135, 51, 1);
             transform: translateX(1rem);
         }
     }
