@@ -1,0 +1,67 @@
+.vidgets {
+    position: fixed;
+    z-index: 100;
+    right: 1rem;
+    bottom: 3.5rem;
+    .whatsapp {
+        position: relative;
+        overflow-x: hidden;
+        width: 7rem;
+        height: 7rem;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #000;
+        margin-bottom: 2rem;
+        
+        .flayer {
+            position: absolute;
+            top: 0;
+            height: 100%;
+            width: 5rem;
+            transform: skewX(-45deg);
+            animation: flare-telegramm 2s infinite linear;
+            background: linear-gradient(90deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.2));
+            -webkit-transform: skewX(-45deg);
+            -moz-transform: skewX(-45deg);
+            -ms-transform: skewX(-45deg);
+            -o-transform: skewX(-45deg);
+            -webkit-animation: flare-telegramm 2s infinite linear;
+            -moz-animation: flare-telegramm 2s infinite linear;
+            -ms-animation: flare-telegramm 2s infinite linear;
+            -o-animation: flare-telegramm 2s infinite linear;
+        }      
+    }
+    .phone {
+        position: relative;
+        overflow-x: hidden;
+        width: 7rem;
+        height: 7rem;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #000; 
+        .flayer {
+            position: absolute;
+            top: 0;
+            height: 100%;
+            width: 5rem;
+            transform: skewX(-45deg);
+            animation: flare-phone 2s infinite linear;
+            background: linear-gradient(90deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.2));
+            -webkit-animation: flare-phone 2s infinite linear;
+            -moz-animation: flare-phone 2s infinite linear;
+            -ms-animation: flare-phone 2s infinite linear;
+            -o-animation: flare-phone 2s infinite linear;
+            -webkit-transform: skewX(-45deg);
+            -moz-transform: skewX(-45deg);
+            -ms-transform: skewX(-45deg);
+            -o-transform: skewX(-45deg);
+        }         
+    }
+    .vidgets-icon {
+        width: 4rem;
+    }  
+}
