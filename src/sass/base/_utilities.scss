@@ -18,3 +18,15 @@
 .slick-track {
     display: flex;
 }
+.block-none-mobile {
+    display: none;
+    @include respond(big-screen) {
+        display: block;
+    }
+}
+.block-none-desctop {
+    display: block;
+    @include respond(big-screen) {
+        display: none;
+    }
+}

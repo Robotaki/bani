@@ -16,6 +16,10 @@
 .section-options {
     padding: 3.7rem 1.7rem 9.6rem;
     background: url('../../img/mobile/third-section/bg.jpg') center / cover no-repeat;
+    @include respond(big-screen) {
+        padding: 11.9rem 17rem 7.25rem;
+        background: url('../../img/desctop/third-section/bg.jpg') center / cover no-repeat;
+    }
 }
 .section-stages {
     padding: 6rem 0 4.5rem;

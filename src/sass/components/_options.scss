@@ -5,20 +5,86 @@
     &__block {
         display: none;
     }
+    &__block:nth-child(3) {
+        display: none;
+    }
     &__items {
         margin-bottom: 4.5rem;
         display: grid;
         gap: 4.5rem 1.7rem;
         grid-template-columns: 1fr 1fr;
+        @include respond(big-screen) {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
     }
     &__item {
+        position: relative;
         background-color: rgba(25, 24, 22, 1);
         padding-bottom: 1.7rem;
+        transition: all 1s;
+    }
+    &:hover &__item::before, &:hover &__item_hover {
+        display: block;
+    }
+    
+    &__item::before {
+        content: '';
+        display: none;
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(254, 255, 249, 0.45);
+        backdrop-filter: blur(7.5px);
+        cursor: pointer;
+        
+    }
+    &__item_hover {
+        display: none;
+        width: 22.7rem;
+        height: 22.7rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        cursor: pointer;
+        transition: all .3s;
+    }
+    &__border_orange {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 22.7rem;
+        height: 22.7rem;
+        border-radius: 50%;
+        border: 1px solid rgba(179, 135, 51, 0.60);
+    }
+    &__border_yellow {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 15.5rem;
+        height: 15.5rem;
+        border-radius: 50%;
+        border: 1px solid #EDCF95;
+    }
+    &__img-loop {
+        display: block;
     }
     &__img {
         display: block;
         margin: 0 auto;
         width: 100%;
+    }
+    &__more {
+        margin-top: 6rem;
+        display: block;
+        text-align: center;
+        font-size: 4rem;
+        font-weight: 700;
     }
     &__paragraph {
         padding: 0 .3rem;
