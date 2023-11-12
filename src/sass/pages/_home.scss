@@ -23,6 +23,9 @@
 }
 .section-stages {
     padding: 6rem 0 4.5rem;
+    @include respond(big-screen) {
+        padding: 17.2rem 13.9rem 20.8rem;
+    }
 }
 .section-reviews {
     padding-bottom: 12.9rem;
