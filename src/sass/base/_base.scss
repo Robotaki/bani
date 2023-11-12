@@ -6,9 +6,13 @@
 
 html {
     font-size: calc(1vw + 0.414em);
+    @include respond(big-screen) {
+        font-size: calc(1vw - .575em);
+    }
 }
 
 body {
+    font-family: $ff-gotham-pro;
     background-color: $bg-color-white;
 }
 

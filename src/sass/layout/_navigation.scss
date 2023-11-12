@@ -1,4 +1,7 @@
 .navigation {
+    @include respond(big-screen) {
+        display: none;
+    }
     &__toggle {
         display: none;
     }

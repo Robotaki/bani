@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="upward" onclick="scrollTopTop()"></div>
-    <div class="vidgets">
+    <div class="vidgets" onclick="scrollTopTop()">
         <div class="whatsapp">
             <div class="whatsapp__img">
                 <a class="whatsapp-mobile" href="https://wa.me/79673231722"><img class="vidgets-icon" src="./img/mobile/icon/whatsapp.png" alt="Icon: Whatsapp"></a>
@@ -46,10 +46,24 @@
                 <img class="logotype__img" src="./img/mobile/icon/logotype.svg" alt="Image: logotype">
                 <div class="header__name-logo logotype__name">
                     <a href="/"><span>ВАША</span><span>БАНЯ</span></a>
-                    
                 </div>
             </div>
-            <a class="header__link-phone" href="tel:8 921 029 01 22">8 921 029 01 22</a>
+            <!-- /.header__logotype -->
+            <div class="header__content-text">
+                <nav class="header__nav">
+                    <ul class="header__list">
+                        <li class="header__item"><a href="#">Главная</a></li>
+                        <li class="header__item"><a href="#">Выбрать баню</a></li>
+                        <li class="header__item"><a href="#">Этапы работы</a></li>
+                        <li class="header__item"><a href="#">Портфолио</a></li>
+                        <li class="header__item"><a href="#">Отзывы</a></li>
+                    </ul>
+                </nav>
+                <a class="header__link-phone" href="tel:8 921 029 01 22">8 921 029 01 22</a>
+                
+            </div>
+            <!-- /.header__content-text -->
+            <a class="header__btn"><img src="./img/desctop/icon/phone-icone.svg" alt="Icon: telephone"><br>Обратный звонок</a>
         </div>
         <!-- /.header__content -->
     </header>
@@ -58,6 +72,18 @@
         <section class="first__section">
             <div class="advantages">
                 <h1 class="advantages__title first-title">Строительство бань из профилированного бруса под ключ</h1>
+                <div class="advantages__content-center">
+                    <a href="#form" class="advantages__btn btn">Расчитать стоимость</a>
+                    <p class="advantages__text-center">
+                        Основа нашего строительства —профилированный брус, изготовленный из древесины хвойных пород.
+                    </p>
+                    <p class="advantages__text-center">
+                        Брусовые бани, возведённые нашими мастерами, отличаются качеством, экологической чистотой материалов и прочностью
+                    </p>
+                    <p class="advantages__text-center">
+                        Наши архитекторы позаботились о том, чтобы в любой представленной бане всем членам семьи было уютно и комфортно
+                    </p>
+                </div>
                 <div class="advantages__items">
                     <div class="advantages__item">
                         <div class="advantages__line-top advantages__line-top_1 line-small_light "></div>
@@ -66,7 +92,9 @@
                             <p class="advantages__text">
                                 Большой выбор проектных решений
                             </p>
+                            <div class="advantages__line-right line-small_light "></div>
                         </div>
+                        <div class="advantages__line-bottom advantages__line-top_1 line-small_light "></div>
                     </div>
                     <div class="advantages__item">
                         <div class="advantages__line-top advantages__line-top_2 line-small_light "></div>
@@ -75,7 +103,9 @@
                             <p class="advantages__text">
                                 Расширенная гарантия 1 год включена в договор
                             </p>
+                            <div class="advantages__line-left line-small_light "></div>
                         </div>
+                        <div class="advantages__line-bottom advantages__line-top_2 line-small_light "></div>
                     </div>
                     <div class="advantages__item">
                         <div class="advantages__line-top advantages__line-top_3 line-small_light "></div>
@@ -84,7 +114,9 @@
                             <p class="advantages__text">
                                 Подробная смета всех этапов
                             </p>
+                            <div class="advantages__line-left line-small_light "></div>
                         </div>
+                        <div class="advantages__line-bottom advantages__line-top_3 line-small_light "></div>
                     </div>
                     <!-- /.advantages__item -->
                 </div>

@@ -5,39 +5,116 @@
     background: rgba(217, 217, 217, 0.30);
     box-shadow: 10px 7px 18px 0px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(7.5px);
+    @include respond(big-screen) {
+        width: 81.7rem;
+        padding: 29rem 2.7rem 2.9rem 1.2rem;
+    }
     &__title {
         padding-left: 1.7rem;
-        
+        @include respond(big-screen) {
+            width: 67.8rem;
+            padding-left: 4.7rem;
+            margin-bottom: 6.9rem;
+            font-size: 4.8rem;
+        }
+    }
+    &__content-center {
+        display: none;
+        @include respond(big-screen) {
+            padding-left: 3rem;
+            display: block;
+        }
+    }
+    &__btn {
+        @include respond(big-screen) {
+            display: inline-block;
+            font-size: 2.4rem;
+            padding: 4rem 6.2rem;
+            margin-bottom: 3.6rem;
+        }
+    }
+    &__text-center {
+        @include respond(big-screen) {
+            font-family: $ff-gotham-pro;
+            font-size: 2rem;
+        }
+    }
+    &__text-center:last-child {
+        font-weight: 700;
+    }
+    &__text-center:not(:last-child) {
+        margin-bottom: 2rem;
     }
     &__items {
         padding-top: 2rem;
         display: flex;
         justify-content: space-between;
+        @include respond(big-screen) {
+            padding-top: 5.1rem;
+        }
     }
     &__line-top {
         margin-bottom: .9rem;
         width: 41.3%;
         height: 0.2rem;
+        @include respond(big-screen) {
+            height: .5rem;
+        }
+    }
+    &__line-bottom {
+        display: none;
+        @include respond(big-screen) {
+            margin-left: 5.3rem;
+            display: block;
+            height: .5rem;
+
+        }
     }
     &__line-top_1 {
         width: 60.3%;
+        @include respond(big-screen) {
+            width: 14.2rem;
+        }
     }
     &__line-top_2 {
         width: 52.3%;
+        @include respond(big-screen) {
+            width: 14.2rem;
+        }
     }
     &__line-top_3 {
         width: 75.3%;
+        @include respond(big-screen) {
+            width: 14.2rem;
+        }
     }
     &__line-left {
         margin: -.9rem 1rem 0 0;
         width: 0.2rem;
         height: 3.4rem;
+        @include respond(big-screen) {
+            width: .5rem;
+            height: 7.4rem;
+        }
+    }
+    &__line-right {
+        display: none;
+        @include respond(big-screen) {
+            display: block;
+            width: 0.5rem;
+            height: 7.4rem;
+        }
     }
     &__text {
         font-family: $ff-gotham-pro;
         font-weight: 400;
         font-size: 1.4rem;
         width: 77.2%;
+        @include respond(big-screen) {
+            font-size: 1.6rem;
+            font-weight: 700;
+            width: 17.5rem;
+        }
     }
 }
 .advantages::after {

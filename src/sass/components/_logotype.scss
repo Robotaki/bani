@@ -3,9 +3,16 @@
     &__img {
         width: 5.7rem;
         height: 5.7rem;
+        @include respond(big-screen) {
+            width: 10.4rem;
+            height: 10.4rem;
+        }
     }
     &__name {
         margin-top: 2.6rem;
+        @include respond(big-screen) {
+            margin-top: 6.4rem;
+        }
         a {
             display: inline-block;
             color: $color-text-dark;
@@ -13,6 +20,9 @@
                 display: block;
                 font-family: $ff-kelly-slab;
                 font-size: 1.6rem;
+                @include respond(big-screen) {
+                    font-size: 2rem;
+                }
             }
         }
         

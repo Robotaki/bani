@@ -5,6 +5,9 @@
     line-height: 132%;
     width: 97%;
     font-weight: 700;
+    @include respond (big-screen) {
+        font-size: 4.8rem;
+    }
 }
 .secondary-title {
     font-family: $ff-raleway;

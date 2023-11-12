@@ -8,4 +8,7 @@
     border-radius: 1.9rem;
     background: linear-gradient(180deg, #D7AF6D 0%, rgba(215, 175, 109, 0.93) 2.08%, #693E1B 100%);
     box-shadow: $button-shadow;
+    @include respond(big-screen) {
+        font-size: 2.4rem;
+    }
 }
