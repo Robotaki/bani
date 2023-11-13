@@ -24,14 +24,26 @@
         width: 6%;
         height: 6%;
         object-fit: cover;
+        @include respond(big-screen) {
+            top: 75%;
+            width: 4%;
+            height: 17%;
+        }
     }
     .slick-prev {
         left: 1.2rem;
         background: url('../../img/mobile/icon/arrow-left.svg') 0 0 no-repeat; 
+        @include respond(big-screen) {
+            background-size: 6.1rem;
+        }
     }
     .slick-next {
         right: 1.2rem;
         background: url('../../img/mobile/icon/arrow-right.svg') 0 0 no-repeat;
+        @include respond(big-screen) {
+            background-size: 6.1rem;
+            right: 0;
+        }
     }
     &__item {
         min-width: 33.7rem;
