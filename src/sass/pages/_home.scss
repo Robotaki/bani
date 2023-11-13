@@ -40,6 +40,9 @@
 }
 .section-construction {
     padding-bottom: 18rem;
+    @include respond(big-screen) {
+        padding: 15.3rem 0;
+    }
 }
 .section-baths {
     padding-bottom: 11.1rem;
