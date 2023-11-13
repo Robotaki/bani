@@ -33,6 +33,10 @@
 }
 .section-questions {
     padding-bottom: 10.4rem;
+    @include respond(big-screen) {
+        padding: 8rem 0 13.5rem;
+        background: rgba(219, 209, 189, 1);
+    }
 }
 .section-construction {
     padding-bottom: 18rem;
