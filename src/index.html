@@ -59,7 +59,7 @@
                         <li class="header__item"><a href="#">Отзывы</a></li>
                     </ul>
                 </nav>
-                <a class="header__link-phone" href="tel:8 921 029 01 22">8 921 029 01 22</a>
+                <a class="header__link-phone block-none-desctop" href="tel:8 921 029 01 22">8 921 029 01 22</a>
                 
             </div>
             <!-- /.header__content-text -->
@@ -4276,60 +4276,121 @@
         <section class="section-feedback">
             <div class="feedback text-align-center">
                 <h3 class="feedback__title">Позвольте нам помочь Вам осуществить вашу мечту о собственной бане.</h3>
-                <p class="feedback__text">
-                    Свяжитесь с нами сегодня, чтобы обсудить ваш проект и начать строительство  идеальной бани.
-                </p>
-                <div class="feedback__group-icons">
-                    <a href="#"  class="feedback__link"><img class="feedback__icon" src="./img/mobile/icon/whatsapp.svg" alt="Icon: whatsapp"></a>
-                    <a href="#" class="feedback__link"><img class="feedback__icon" src="./img/mobile/icon/phone.svg" alt="Icon: phone"></a>
-                    <a href="#" class="feedback__link"><img class="feedback__icon" src="./img/mobile/icon/telegram.svg" alt="Icon: telegram"></a>
-                </div>
-                <form id="form" class="form feedback__form" name="form" action="send.php">
-                    <input autocomplete="on" id="phone" class="input feedback__input __req" type="tel" name="phone" placeholder="номер телефона">
-                    <input autocomplete="on" id="email" class="input feedback__input __req __email" type="email" name="email" placeholder="email">
-                    <textarea class="input feedback__input feedback__input_height" id="message" placeholder="Сообщение" name="message"></textarea>
-                    <button id="input__submit" class="input__submit feedback__btn btn" type="submit" name="submit" value="Отправить">Отправить</button>
-                </form>
-                <div id="overlay" class="overlay js-overlay-thank-you overlay-open">
-                    <div class="overlay__flex">
-                        <div class="popup-2 js-thank-you">
-                            <img src="./img/mobile/icon/checked.svg" alt="checked">
-                            <span>сообщение отправлено</span>
-                            <p>
-                                Мы свяжемся с вами в ближайшее время
-                            </p>
-                            <a href="/" class="overlay__btn btn"><strong>На главную</strong></a>
+                <div class="feedback__body">
+                    <div class="feedback__body_left">
+                        <p class="feedback__text">
+                            Свяжитесь с нами сегодня, чтобы обсудить ваш проект и начать строительство  идеальной бани.
+                        </p>
+                        <div class="feedback__line"></div>
+                        <div class="feedback__group-icons">
+                            <a href="#" class="feedback__link"><img class="feedback__icon" src="./img/mobile/icon/whatsapp.svg" alt="Icon: whatsapp"></a>
+                            <a href="#" class="feedback__link"><img class="feedback__icon feedback__icon_phone" src="./img/mobile/icon/phone.svg" alt="Icon: phone"></a>
+                            <a href="#" class="feedback__link"><img class="feedback__icon" src="./img/mobile/icon/telegram.svg" alt="Icon: telegram"></a>
                         </div>
                     </div>
+                    <!-- /.ffedback__body_left -->
+                    <div class="feedback__body_right">
+                        <form id="form" class="form feedback__form" name="form" action="send.php">
+                            <input autocomplete="on" id="phone" class="input feedback__input feedback__input_phone __req" type="tel" name="phone" placeholder="номер телефона">
+                            <input autocomplete="on" id="email" class="input feedback__input __req __email" type="email" name="email" placeholder="email">
+                            <textarea class="input feedback__input feedback__input_height" id="message" placeholder="Сообщение" name="message"></textarea>
+                            <button id="input__submit" class="input__submit feedback__btn btn feedback__btn_mobile" type="submit" name="submit" value="Отправить">Отправить</button>
+                        </form>
+                        <div id="overlay" class="overlay js-overlay-thank-you overlay-open">
+                            <div class="overlay__flex">
+                                <div class="popup-2 js-thank-you">
+                                    <img src="./img/mobile/icon/checked.svg" alt="checked">
+                                    <span>сообщение отправлено</span>
+                                    <p>
+                                        Мы свяжемся с вами в ближайшее время
+                                    </p>
+                                    <a href="/" class="overlay__btn btn"><strong>На главную</strong></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="feedback__block_submit">
+                            <button id="input__submit" class="input__submit feedback__btn btn feedback__btn_desctop" type="submit" name="submit" value="Отправить">Отправить</button>
+                        </div>
+                    </div>
+                    <!-- /.feedback__body_right -->
                 </div>
+                
                 <div class="feedback__logotype logotype">
                     <a href="/"><img class="feedback__img logotype__img" src="./img/mobile/icon/logotype.svg" alt="Image: logotype"></a>
-                    <div class="feedback__name logotype__name">
-                        <a href="/"><span>ВАША</span><span>БАНЯ</span></a>
-                    </div>
+                    <a class="feedback__name" href="/"><span>ВАША</span><br> <span>БАНЯ</span></a>
                 </div>
             </div>
             
         </section>
         <!-- /.section-form -->
     </main>
-    <footer class="footer">
-        <div class="footer__content">
-            <ul class="footer__list">
-                <li class="footer__item"><a href="/" class="footer__link">Главная</a></li>
-                <li class="footer__item"><a href="#" class="footer__link">Выбрать баню</a></li>
-                <li class="footer__item"><a href="#" class="footer__link">Этапы работы</a></li>
-                <li class="footer__item"><a href="#" class="footer__link">Портфолио</a></li>
-                <li class="footer__item"><a href="#" class="footer__link">Отзывы</a></li>
-            </ul>
-            <ul class="footer__list">
-                <li class="footer__item"><a href="/" class="footer__link">ИП Терехов А.Ю.</a></li>
-                <li class="footer__item"><a href="#" class="footer__link">ИНН 390705392899</a></li>
-                <li class="footer__item"><a href="#" class="footer__link">г.Калининград ул.Узловая 16В</a></li>
-                <li class="footer__item"><a href="#" class="footer__link">+7 938 445 61 76</a></li>
-            </ul>
+    <footer class="section-footer">
+        <div class="footer">
+            <div class="footer__logotype logotype">
+                <a href="/"><img class="footer__img logotype__img" src="./img/mobile/icon/logotype.svg" alt="Image: logotype"></a>
+                <a class="footer__name" href="/"><span>ВАША</span><br> <span>БАНЯ</span></a>
+            </div>
+            <div class="footer__content">
+                <div class="footer__lists">
+                    <ul class="footer__list block-none-mobile">
+                        <li class="footer__item"><a href="#">Главная</a></li>
+                        <li class="footer__item"><a href="#">Выбрать баню</a></li>
+                        <li class="footer__item"><a href="#">Этапы работы</a></li>
+                        <li class="footer__item"><a href="#">Портфолио</a></li>
+                        <li class="footer__item"><a href="#">Отзывы</a></li>
+                    </ul>
+                    <ul class="footer__list">
+                        <li class="footer__item"><a class="footer__mail block-none-mobile" href="mailto:andresushilov@yandex.ru">andresushilov@yandex.ru</a></li>
+                        <li class="footer__item"><a href="tel:+79992801496" class="footer__link">+7 999 280 14 96</a></li>
+                        <li class="footer__item"><a href="tel:+79816019066" class="footer__link">+7 981 601 90 66</a></li>
+                        <li class="footer__item block-none-mobile">Сушилов А.Ю.</li>
+                        <li class="footer__item block-none-mobile">ИНН 531301869952</li>
+                    </ul>
+                    <ul class="footer__list block-none-desctop">
+                        <li class="footer__item">Сушилов А.Ю.</li>
+                        <li class="footer__item">ИНН 531301869952</li>
+                    </ul>
+                    <div class="footer__column-3 block-none-mobile">
+                        <div class="footer__location">
+                            <p>
+                                Новгородская область г Пестово ул Вокзальзая 4 б
+                            </p>
+                            <ul class="footer__list">
+                                <li class="footer__item">Московская обл.</li>
+                                <li class="footer__item">Нижегородская обл.</li>
+                                <li class="footer__item">Ленинградская обл.</li>
+                                <li class="footer__item">Волгодонская обл.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <ul class="footer__list block-none-desctop">
+                        <li class="footer__item">Новгородская область</li>
+                        <li class="footer__item">г.Пестово</li>
+                        <li class="footer__item">ул.Вокзальзая 4б</li>
+                    </ul>
+                    <ul class="footer__list block-none-desctop">
+                        <li class="footer__item">Московская обл.</li>
+                        <li class="footer__item">Нижегородская обл.</li>
+                        <li class="footer__item">Ленинградская обл.</li>
+                        <li class="footer__item">Волгодонская обл.</li>
+                    </ul>
+                </div>
+                <div class="footer__links text-align-center">
+                    <a class="footer__mail" href="mailto:andresushilov@yandex.ru">andresushilov@yandex.ru</a>
+                </div>
+                <p class="footer__desc text-align-center">
+                    Вся представленная на сайте информация носит информационный характер и не является публичной офертой, определяемой положениями Статьи 437 (2) Гражданского кодекса Российской Федерации.
+                </p>
+                <div class="footer__creator text-align-center">
+                    <p class="footer__text">
+                        Сайт создан студией <a class="footer__link-studio" href="https://www.limstudiodesign.ru/">LimStudio.design</a>
+                    </p>
+                </div>
+            </div>
         </div>
+        <!-- /.footer -->
     </footer>
+    <!-- /.section-footer -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="./js/slick.min.js"></script>
     <script type="text/javascript" src="./js/scroll__up.js"></script>
