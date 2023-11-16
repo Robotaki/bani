@@ -1,6 +1,10 @@
 .first__section {
     padding-top: 48.7rem;
     background: url('../../img/mobile/first-section/bg.jpg') center / cover no-repeat;
+    @include respond(tab-port) {
+        padding-top: 0;
+        background: url('../../img/desctop/first-section/bg.jpg') center / cover no-repeat;
+    }
     @include respond(big-screen) {
         padding-top: 0;
         background: url('../../img/desctop/first-section/bg.jpg') center / cover no-repeat;
@@ -46,7 +50,21 @@
 }
 .section-baths {
     padding-bottom: 11.1rem;
+    @include respond(big-screen) {
+        padding-bottom: 0;
+    }
 }
 .section-feedback {
     padding-bottom: 2.8rem;
+    @include respond(big-screen) {
+        padding: 10rem 0 30.7rem;
+    }
+}
+.section-footer {
+    padding: 5rem 0 3.4rem;
+    overflow: hidden;
+    background: rgba(96, 94, 94, 1);
+    @include respond(tab-port) {
+        padding: 3.8rem 0 7.3rem;
+    }
 }

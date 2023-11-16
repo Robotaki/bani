@@ -1,0 +1,67 @@
+.footer {
+    margin: 0 auto;
+    width: 31.2rem;
+    &__logotype {
+        display: none;
+        margin-bottom: 7.95rem;
+        @include respond(tab-port) {
+            display: flex;
+            align-items: end;
+        }
+    }
+    &__img {
+        width: 16.2rem;
+        height: 16.2rem;
+    }
+    &__name {
+        font-family: $ff-kelly-slab;
+        font-size: 3.6rem;
+        color: rgba(0, 0, 0, 1);
+    }
+    &__lists {
+        margin: 0 auto 2.8rem;
+        width: 30.3rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem 2rem;
+        font-size: 1.3rem;
+        @include respond(tab-port) {
+            width: 86rem;
+            display: flex;
+            
+        }
+    }
+    &__item:not(:last-child) {
+        margin-bottom: .9rem;
+    }
+    &__link {
+        color: rgba(0, 0, 0, 1);
+    }
+    &__links {
+        margin-bottom: 2.8rem;
+    }
+    &__mail {
+        font-size: 1.3rem;
+        color: rgba(0, 0, 0, 1);
+    }
+    &__desc {
+        margin: 0 auto 2.8rem;
+        font-size: 1.2rem;
+        letter-spacing: .84px;
+        width: 28.6rem;
+    }
+    &__text {
+        margin: 0 auto;
+        width: 22.4rem;
+        font-family: $ff-montserrat;
+        font-size: 1.4rem;
+        font-weight: 300;
+        letter-spacing: .84px;
+        color: rgba(255, 255, 255, 1);
+        line-height: 130%;
+    }
+    &__link-studio {
+        font-weight: 500;
+        color: rgba(255, 255, 255, 1);
+    }
+}
