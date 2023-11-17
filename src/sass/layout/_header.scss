@@ -45,7 +45,8 @@
             display: none;
         }
         @include respond(big-screen) {
-            display: block;
+            display: flex;
+            align-items: end;
             margin-right: 28.4rem;
         }
     }

@@ -5,12 +5,43 @@
     background: rgba(217, 217, 217, 0.30);
     box-shadow: 10px 7px 18px 0px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(7.5px);
+    @include respond(tab-port) {
+        width: 629px;
+        padding: 14.5rem 0 5.4rem 0;
+    }
     @include respond(big-screen) {
         width: 81.7rem;
         padding: 29rem 2.7rem 2.9rem 1.2rem;
     }
+    &__logotype {
+        display: none;
+        @include respond(tab-port) {
+            margin: 6.9rem auto 9.9rem;
+            width: 16.4rem;
+            display: flex;
+            align-items: flex-end;
+        }
+        @include respond(big-screen) {
+            display: none;
+        }
+    }
+    &__img {
+        width: 10.4rem;
+        height: 10.4rem;
+    }
+    &__name {
+        font-family: $ff-kelly-slab;
+        font-size: 2rem;
+        color: rgba(0, 0, 0, 1);
+    }
     &__title {
         padding-left: 1.7rem;
+        @include respond(tab-port) {
+            width: 58.1rem;
+            padding-left: 5.5rem;
+            font-size: 4rem;
+            margin-bottom: 6.9rem;
+        }
         @include respond(big-screen) {
             width: 67.8rem;
             padding-left: 4.7rem;
@@ -20,14 +51,28 @@
     }
     &__content-center {
         display: none;
+        @include respond(tab-port) {
+            display: block;
+        }
         @include respond(big-screen) {
             padding-left: 3rem;
+        }
+    }
+    &__text-center {
+        display: none;
+        @include respond(big-screen) {
             display: block;
         }
     }
     &__btn {
-        @include respond(big-screen) {
+        @include respond(tab-port) {
             display: inline-block;
+            padding: 4rem 6rem;
+            font-size: 2.4rem;
+            margin-left: 5.5rem;
+            margin-bottom: 11.6rem;
+        }
+        @include respond(big-screen) {
             font-size: 2.4rem;
             padding: 4rem 6.2rem;
             margin-bottom: 3.6rem;
@@ -35,7 +80,6 @@
     }
     &__text-center {
         @include respond(big-screen) {
-            font-family: $ff-gotham-pro;
             font-size: 2rem;
         }
     }
@@ -49,6 +93,11 @@
         padding-top: 2rem;
         display: flex;
         justify-content: space-between;
+        @include respond(tab-port) {
+            margin: 0 auto;
+            padding-top: 0;
+            width: 579px;
+        }
         @include respond(big-screen) {
             padding-top: 5.1rem;
         }
@@ -63,9 +112,13 @@
     }
     &__line-bottom {
         display: none;
+        @include respond(tab-port) {
+            display: block;
+            margin-left: 0;
+            height: 0.2rem;
+        }
         @include respond(big-screen) {
             margin-left: 5.3rem;
-            display: block;
             height: .5rem;
 
         }
@@ -74,6 +127,7 @@
         width: 60.3%;
         @include respond(big-screen) {
             width: 14.2rem;
+            margin-top: 0;
         }
     }
     &__line-top_2 {
@@ -88,6 +142,21 @@
             width: 14.2rem;
         }
     }
+    &__line-bottom_1 {
+        @include respond(tab-port) {
+            margin-left: 5.4rem;
+        }
+    }
+    &__line-bottom_2 {
+        @include respond(tab-port) {
+            margin-left: 5.4rem;
+        }
+    }
+    &__line-bottom_3 {
+        @include respond(tab-port) {
+            margin-left: 5.4rem;
+        }
+    }
     &__line-left {
         margin: -.9rem 1rem 0 0;
         width: 0.2rem;
@@ -99,21 +168,41 @@
     }
     &__line-right {
         display: none;
-        @include respond(big-screen) {
+        @include respond(tab-port) {
+            margin-top: 1.2rem;
             display: block;
+            width: 0.2rem;
+            height: 5.5rem;
+        }
+        @include respond(big-screen) {
             width: 0.5rem;
             height: 7.4rem;
         }
     }
+    &__line-right_2 {
+        @include respond(tab-port) {
+            margin-top: 1.5rem;
+        }
+    }
     &__text {
-        font-family: $ff-gotham-pro;
         font-weight: 400;
         font-size: 1.4rem;
         width: 77.2%;
+        font-weight: 700;
+        @include respond(tab-port) {
+            padding: 1.2rem 1rem 1rem 0;
+            font-size: 1.5rem;
+            width: 14rem;
+        }
         @include respond(big-screen) {
             font-size: 1.6rem;
             font-weight: 700;
             width: 17.5rem;
+        }
+    }
+    &__text-2 {
+        @include respond(tab-port) {
+            padding-top: 0;
         }
     }
 }

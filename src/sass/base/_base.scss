@@ -6,9 +6,13 @@
 
 html {
     font-size: calc(1vw + 0.414em);
+    @include respond(tab-port) {
+        font-size: calc(1vw - .0125em);
+    }
     @include respond(big-screen) {
         font-size: calc(1vw - .575em);
     }
+    
 }
 
 body {
