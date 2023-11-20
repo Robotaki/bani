@@ -65,6 +65,9 @@
 }
 .section-baths {
     padding-bottom: 11.1rem;
+    @include respond(tab-port) {
+        margin-bottom: 0;
+    }
     @include respond(big-screen) {
         padding-bottom: 0;
     }

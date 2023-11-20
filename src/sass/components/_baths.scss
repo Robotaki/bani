@@ -1,29 +1,50 @@
 .baths-title {
-    width: 1579px;
+    width: 157.9rem;
     margin: 0 auto 9rem;
     padding: 0 0 10.7rem 4.8rem;
     border-bottom: 1px solid #000;
     span {
         margin: 1.9rem 0 0 21rem;
     }
+    @include respond(tab-port) {
+        width: 82.6rem;
+        padding: 0 0 5.6rem 2.5rem;
+        font-size: 2.1rem;
+        span {
+            display: block;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin: 0 0 0 11rem;
+        }
+    }
 }
 .baths {
     &__item {
-        @include respond(big-screen) {
+        @include respond(tab-port) {
             display: flex;
         }
     }
     &__item_mr {
-        @include respond(big-screen) {
+        @include respond(tab-port) {
             justify-content: space-between;
+            img {
+                margin-right: 1rem;
+            }
+        }
+        @include respond(big-screen) {
             img {
                 margin-right: 7rem;
             }
         }
     }
     &__item_fr {
-        @include respond(big-screen) {
+        @include respond(tab-port) {
             flex-direction: row-reverse;
+            img {
+                margin-left: 1rem;
+            }
+        }
+        @include respond(big-screen) {
             img {
                 margin-left: 7rem;
             }
@@ -31,6 +52,9 @@
     }
     &__item:not(:last-child) {
         padding-bottom: 9rem;
+        @include respond(tab-port) {
+            padding-bottom: 0;
+        }
         @include respond(big-screen) {
             padding-bottom: 0;
         }
@@ -40,25 +64,55 @@
         width: 157.9rem;
         height: 1px;
         background: rgba(0, 0, 0, 1);
+        @include respond(tab-port) {
+            margin: 6rem auto;
+            width: 82.6rem;
+        }
     }
     &__img {
         img {
             width: 100%;
+            @include respond(tab-port) {
+                width: 45.3rem;
+            }
+        } 
+    }
+    &__img-4 {
+        @include respond(tab-port) {
+            margin-top: 4.6rem;
         }
     }
     &__desc {
         padding-left: 1.7rem;
-        font-family: $ff-gotham-pro;
         margin-top: 2.3rem;
         width: 27.3rem;
+        @include respond(tab-port) {
+            width: 81.2rem;
+            padding-left: 3.25rem;
+        }
         @include respond(big-screen) {
             width: 90.4rem;
+        }
+    }
+    &__desc-3 {
+        @include respond(tab-port) {
+            margin-top: 4.8rem;
+        }
+    }
+    &__desc-4 {
+        @include respond(tab-port) {
+            
         }
     }
     &__title {
         margin-bottom: 1.2rem;
         font-size: 2rem;
         font-weight: 700;
+        @include respond(tab-port) {
+            font-size: 2.5rem;
+            margin-top: -3rem;
+            margin-bottom: 2.6rem;
+        }
         @include respond(big-screen) {
             font-size: 4.8rem;
             margin: -4rem 0 5.1rem;
@@ -68,29 +122,42 @@
         margin-bottom: 3.6rem;
         font-size: 1.4rem;
         line-height: 130%;
+        @include respond(tab-port) {
+            font-size: 1.25rem;
+            line-height: 120%;
+        }
         @include respond(big-screen) {
             font-size: 2.4rem;
             line-height: 120%;
         }
     }
     &__text_width-2 {
+        @include respond(tab-port) {
+            width: 41.9rem;
+        }
         @include respond(big-screen) {
             width: 81rem;
         }
     }
     &__text_width-3 {
         width: 27.6rem;
+        @include respond(tab-port) {
+            width: 48.7rem;
+        }
         @include respond(big-screen) {
             width: 87.7rem;
         }
     }
     &__text_width-4 {
+        @include respond(tab-port) {
+            width: 47.7rem;
+        }
         @include respond(big-screen) {
             width: 84.1rem;
         }
     }
     &__text_w700 {
-        @include respond(big-screen) {
+        @include respond(tab-port) {
             font-weight: 700;
         }
     }
@@ -98,7 +165,7 @@
         display: block;
         padding: 1.2rem 4.5rem;
         margin: 0 auto;
-        @include respond(big-screen) {
+        @include respond(tab-port) {
             display: none;
         }
     }
