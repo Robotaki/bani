@@ -33,6 +33,9 @@
 }
 .section-stages {
     padding: 6rem 0 4.5rem;
+    @include respond(tab-port) {
+        padding: 14.3rem 0 12.8rem;
+    }
     @include respond(big-screen) {
         padding: 17.2rem 13.9rem 20.8rem;
     }
