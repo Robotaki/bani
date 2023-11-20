@@ -14,8 +14,10 @@
         display: grid;
         gap: 4.5rem 1.7rem;
         grid-template-columns: 1fr 1fr;
-        @include respond(big-screen) {
+        @include respond(tab-port) {
             grid-template-columns: 1fr 1fr 1fr;
+        }
+        @include respond(big-screen) {
             gap: 5.7rem 2.8rem;
         }
     }
@@ -23,14 +25,16 @@
         position: relative;
         background-color: rgba(25, 24, 22, 1);
         padding-bottom: 1.7rem;
-        // &:hover {
-        //     &::before {
-        //         display: block;
-        //     }
-        //     .options__item_hover {
-        //         display: block;
-        //     }
-        // }
+        @include respond(tab-port) {
+            &:hover {
+                &::before {
+                    display: block;
+                }
+                .options__item_hover {
+                    display: block;
+                }
+            }
+        }
     }
     
     &__item::before {
@@ -66,16 +70,16 @@
         width: 22.7rem;
         height: 22.7rem;
         border-radius: 50%;
-        border: 1px solid rgba(179, 135, 51, 0.60);
+        border: 2rem solid rgba(179, 135, 51, .4);
     }
     &__border_yellow {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 15.5rem;
-        height: 15.5rem;
+        width: 100%;
+        height: 100%;
         border-radius: 50%;
-        border: 1px solid #EDCF95;
+        border: 2rem solid rgba(237, 207, 149, .4);
     }
     &__img-loop {
         display: block;
@@ -84,6 +88,17 @@
         display: block;
         margin: 0 auto;
         width: 100%;
+    }
+    &__img_mobile {
+        @include respond(tab-port) {
+            display: none;
+        }
+    }
+    &__img_desctop {
+        display: none;
+        @include respond(tab-port) {
+            display: block;
+        }
     }
     &__more {
         margin-top: 6rem;
@@ -103,6 +118,9 @@
         font-size: 1rem;
         font-weight: 700;
         color: rgba(252, 239, 239, 1);
+        @include respond(tab-port) {
+            font-size: 0.89rem;
+        }
         @include respond(big-screen) {
             font-size: 2rem;
             margin-top: 0;
@@ -125,6 +143,10 @@
     &__btn {
         display: block;
         margin: 6rem auto;
+        @include respond(tab-port) {
+            padding: 3.9rem 10.3rem;
+            font-size: 2.4rem;
+        }
     }
     &__popup {
         display: none;
@@ -144,7 +166,10 @@
         margin: 0 auto;
         width: 30.3rem;
         background: rgba(255, 255, 255, 1);
-        padding: 1.5rem 1.2rem; 
+        padding: 1.5rem 1.2rem;
+        @include respond(tab-port) {
+            width: 95.9rem;
+        } 
         @include respond(big-screen) {
             width: 165.6rem;
         } 
@@ -156,36 +181,49 @@
         }
     }
     &__content-body {
-        @include respond(big-screen) {
+        @include respond(tab-port) {
             display: flex;
             flex-direction: row-reverse;
             margin: 0 auto;
-            width: 1523px;
+            width: 88.2rem;
+        }   
+        @include respond(big-screen) {
+            width: 152.3rem;
         }
     }
     &__body-right {
-        @include respond(big-screen) {
+        @include respond(tab-port) {
             position: relative;
+            width: 55.4rem;
+            padding-left: 3.24rem;
+        }
+        @include respond(big-screen) {
             width: 95.1rem;
             padding-left: 5.6rem;
         }
     }
     &__body-right::before {
-        @include respond(big-screen) {
+        @include respond(tab-port) {
             content: '';
             display: block;
             width: 1px;
-            height: 763px;
+            height: 49.65rem;
             position: absolute;
-            top: 0;
+            bottom: -5.3rem;
             left: 0;
             background: #000;
         }
+        @include respond(big-screen) {
+            height: 77.7rem;
+        }
     }
     &__body-left {
-        @include respond(big-screen) {
+        @include respond(tab-port) {
             margin: 0 auto;
-            width: 565px;
+            width: 32.7rem;
+        }
+        @include respond(big-screen) {
+            width: 56.5rem;
         }
     }
     &__content-bottom {
@@ -279,6 +317,10 @@
         font-size: 1.4rem;
         font-weight: 700;
         padding: 2.5rem 0 0 1.3rem;
+        @include respond(tab-port) {
+            font-size: 2.1rem;
+            padding-left: 0;
+        }
         @include respond(big-screen) {
             padding: 0;
             font-size: 3.6rem;
@@ -292,6 +334,10 @@
         width: 25rem;
         height: 0.1rem;
         background: #000;
+        @include respond(tab-port) {
+            width: 50.7rem;
+            margin-left: -3.2rem;
+        }
         @include respond(big-screen) {
             width: 95.1rem;
             margin-left: -5.6rem;
@@ -311,9 +357,13 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 1rem 2.2rem;
-        font-family: $ff-gotham-pro;
         font-size: 1.3rem;
         font-weight: 700;
+        @include respond(tab-port) {
+            margin: 0 0 1.42rem;
+            font-size: 1.38rem;
+            width: 22.4rem;
+        }
         @include respond(big-screen) {
             margin: 0 0 2.4rem 0;
             width: 38.8rem;
@@ -322,6 +372,9 @@
     }
     &__name {
         width: 11.7rem;
+        @include respond(tab-port) {
+            width: 12.5rem;
+        }
         @include respond(big-screen) {
             width: 21.5rem;
         }
@@ -332,6 +385,10 @@
         background: rgba(252, 243, 226, 1);
         width: 27.4rem;
         margin: 0 auto 1.8rem;
+        @include respond(tab-port) {
+            width: 52.2rem;
+            padding: 5.9rem 0 3.45rem;
+        }
         @include respond(big-screen) {
             margin: 0;
             width: 90.2rem;
@@ -347,6 +404,11 @@
     &__slices-line__top {
         width: 27.4rem;
         height: .5rem;
+        @include respond(tab-port) {
+            right: 1px;
+            height: .75rem;
+            width: 47.2rem;
+        }
         @include respond(big-screen) {
             width: 81.5rem;
             height: 1.3rem;
@@ -355,6 +417,10 @@
     &__slices-line__right {
         height: 26.1rem;
         width: .5rem;
+        @include respond(tab-port) {
+            height: 18.3rem;
+            width: 0.75rem;
+        }
         @include respond(big-screen) {
             height: 28.2rem;
             width: 1.3rem;
@@ -368,8 +434,12 @@
         grid-template-columns: 1fr 1fr;
         gap: 1.8rem 4.1rem;
         align-items: center;
-        @include respond(big-screen) {
+        @include respond(tab-port) {
+            font-size: 1.38rem;
             margin: 0 auto;
+            width: 43.5rem;
+        }
+        @include respond(big-screen) {
             width: 75rem;
             font-size: 2.4rem;
             gap: 3.1rem 10.5rem;
@@ -377,6 +447,9 @@
     }
     &__slice-name {
         width: 12.7rem;
+        @include respond(tab-port) {
+            width: 26.7rem;
+        }
         @include respond(big-screen) {
             width: 47rem;
         }
@@ -386,6 +459,11 @@
         width: 28.1rem;
         display: flex;
         justify-content: space-between;
+        @include respond(tab-port) {
+            margin-top: 1.39rem;
+            margin-bottom: 2.72rem;
+            width: 39.7rem;
+        }
         @include respond(big-screen) {
             margin-top: 2.4rem;
             margin-bottom: 4.7rem;
@@ -397,6 +475,10 @@
         padding: .3rem 0 1.8rem;
         text-align: center;
         border: 1px solid rgba(105, 62, 27, 1);
+        @include respond(tab-port) {
+            width: 6.42rem;
+            padding: .4rem 0 .2rem;
+        }
         @include respond(big-screen) {
             width: 11.1rem;
             padding: .7rem 1.4rem .5rem;
@@ -412,7 +494,7 @@
     &__slices-name {
         display: flex;
         text-align: center;
-        @include respond(big-screen) {
+        @include respond(tab-port) {
             display: none;
         }
     }
@@ -423,13 +505,51 @@
     }
     &__img-name_mn {
         display: none;
-        @include respond(big-screen) {
+        @include respond(tab-port) {
             display: block;
+        }
+    }
+    &__slice-img_mn {
+        display: none;
+        @include respond(tab-port) {
+            display: block;
+            margin: 0 auto .81rem;
+        }
+    }
+    &__slice-img_mn-1 {
+        @include respond(tab-port) {
+            width: 1.96rem;
+        }
+    }
+    &__slice-img_mn-2 {
+        @include respond(tab-port) {
+            width: 2.25rem;
+        }
+    }
+    &__slice-img_mn-3 {
+        @include respond(tab-port) {
+            width: 3rem;
+        }
+    }
+    &__slice-img_mn-4 {
+        @include respond(tab-port) {
+            width: 3.35rem;
+        }
+    }
+    &__slice-img_mn-5 {
+        @include respond(tab-port) {
+            width: 3.7rem;
+        }
+    }
+    &__slice-img_mn-6 {
+        @include respond(tab-port) {
+            width: 4.05rem;
         }
     }
     &__slice-img_dn {
         display: block;
-        @include respond(big-screen) {
+        margin: 0 auto;
+        @include respond(tab-port) {
             display: none;
         }
     }
@@ -440,6 +560,38 @@
         }
         @include respond(big-screen) {
             margin: 0;
+        }
+    }
+    &__house-img_mobile {
+        display: block;
+        @include respond(tab-port) {
+            display: none;
+        }
+    }
+    &__house-img_desctop {
+        display: none;
+        @include respond(tab-port) {
+            display: block;
+            margin-top: 0;
+        }
+        @include respond(big-screen) {
+            margin-top: -6rem;
+        }
+    }
+    &__scheme-img_mobile {
+        display: block;
+        @include respond(tab-port) {
+            display: none;
+        }
+    }
+    &__scheme-img_desctop {
+        display: none;
+        @include respond(tab-port) {
+            display: block;
+            margin-top: 0;
+        }
+        @include respond(big-screen) {
+            margin-top: .7rem;
         }
     }
     &__scheme-img {
@@ -459,7 +611,7 @@
         font-size: 1.3rem;
         padding: 1.1rem 4.5rem;
         color: $color-dark;
-        @include respond(big-screen) {
+        @include respond(tab-port) {
             display: none;
         }
     }
@@ -467,10 +619,19 @@
         display: none;
         padding: 2rem 9.3rem;
         font-size: 2rem;
-        @include respond(big-screen) {
+        @include respond(tab-port) {
             display: block;
-            width: 30.1rem;
+            border-radius: 11px;
             margin: 0 auto;
+            text-align: center;
+            width: 17.4rem;
+            font-size: 1.15rem;
+            padding: 1.15rem 0;
+        }
+        @include respond(big-screen) {
+            width: 30.1rem;
+            padding: 2rem 9.4rem;
+            font-size: 2rem;
         }
     }
 }
