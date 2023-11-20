@@ -20,6 +20,24 @@ $(document).ready(function () {
           slidesToShow: 2,
           slidesToScroll: 2,
           infinite: true,
+          arrows: true,
+        }
+      },
+      {
+        breakpoint: 1020,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          infinite: true,
+          arrows: false,
+        }
+      },
+      {
+        breakpoint: 337,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          infinite: true,
           arrows: false,
         }
       },
