@@ -17,6 +17,16 @@
             margin: 0 0 0 11rem;
         }
     }
+    @include respond(big-screen) {
+        margin: 0 0 9rem 21.7rem;
+        padding: 0 0 10.7rem 0;
+        width: 1579px;
+        font-size: 4rem;
+        span {
+            margin: 0 0 0 21rem;
+            font-size: 4.8rem;
+        }
+    }
 }
 .baths {
     &__item {
@@ -68,12 +78,19 @@
             margin: 6rem auto;
             width: 82.6rem;
         }
+        @include respond(big-screen) {
+            margin: 7.3rem auto;
+            width: 157.9rem;
+        }
     }
     &__img {
         img {
             width: 100%;
             @include respond(tab-port) {
                 width: 45.3rem;
+            }
+            @include respond(big-screen) {
+                width: 100%;
             }
         } 
     }
@@ -100,9 +117,6 @@
         }
     }
     &__desc-4 {
-        @include respond(tab-port) {
-            
-        }
     }
     &__title {
         margin-bottom: 1.2rem;
