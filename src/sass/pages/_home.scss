@@ -74,6 +74,9 @@
 }
 .section-feedback {
     padding-bottom: 2.8rem;
+    @include respond(tab-port) {
+        padding-bottom: 11.3rem;
+    }
     @include respond(big-screen) {
         padding: 10rem 0 30.7rem;
     }
