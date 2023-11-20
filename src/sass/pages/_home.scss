@@ -56,7 +56,9 @@
 }
 .section-construction {
     padding-bottom: 18rem;
-    
+    @include respond(tab-port) {
+        padding: 10.8rem 0 11.5rem;
+    }
     @include respond(big-screen) {
         padding: 15.3rem 0;
     }
