@@ -46,13 +46,17 @@
 }
 .section-questions {
     padding-bottom: 10.4rem;
-    @include respond(big-screen) {
+    @include respond(tab-port) {
         padding: 8rem 0 13.5rem;
         background: rgba(219, 209, 189, 1);
+    }
+    @include respond(big-screen) {
+        padding: 8rem 0 13.5rem;
     }
 }
 .section-construction {
     padding-bottom: 18rem;
+    
     @include respond(big-screen) {
         padding: 15.3rem 0;
     }
