@@ -4,6 +4,7 @@
         width: 96.6rem;
     }
     @include respond(big-screen) {
+        margin: 0 auto;
         width: 166.6rem;
     }
     &__title {
