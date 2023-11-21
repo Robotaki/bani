@@ -12,7 +12,7 @@
             }
         }
         @include respond(big-screen) {
-            padding-left: 21.8rem;
+            padding-left: 6.4rem;
             margin-bottom: 11.5rem;
             font-size: 4rem;
             span {
@@ -41,6 +41,7 @@
         }
         @include respond(big-screen) {
             padding: 5.9rem 1.3rem 0 0;
+            width: 33rem;
         }
     }
     &__item:not(:first-child) {
@@ -53,22 +54,24 @@
             padding-left: 1.3rem;
         }
         @include respond(big-screen) {
-            padding-left: 2.4rem;
+            padding-left: 3rem;
         }
     }
     &__item:nth-child(3) {
-        padding-left: 2.9rem;
-        padding-bottom: .9rem;
         @include respond(tab-port) {
             padding-left: 1.3rem;
             padding-bottom: 0;
         }
+        @include respond(big-screen) {
+            padding-left: 3rem;
+        }
     }
     &__item:nth-child(4) {
-        padding-left: 3.4rem;
-        padding-bottom: 4.41rem;
         @include respond(tab-port) {
             padding-left: 1.3rem;
+        }
+        @include respond(big-screen) {
+            padding-left: 3rem;
         }
     }
     &__item:last-child {
@@ -76,7 +79,7 @@
             border-right: none;
         }
         @include respond(big-screen) {
-            padding-left: 4.6rem;
+            padding-left: 3rem;
         }
         &::after {
             margin-top: 1.57rem;
@@ -108,6 +111,11 @@
             display: block;
             span {
                 font-size: 5.2rem;
+            }
+        }
+        @include respond(big-screen) {
+            span {
+                font-size: 9.6rem;
             }
         }
     }
@@ -147,7 +155,8 @@
             font-size: 1.3rem;
         }
         @include respond(big-screen) {
-            margin: 4rem 0 9.5rem 2.3rem;
+            margin: 3.5rem 0 9.5rem 2.3rem;
+            font-size: 2.4rem;
         }
     }
     &__subtitle::before {
@@ -168,7 +177,7 @@
             margin-bottom: 3.1rem;
         }
         @include respond(big-screen) {
-            width: 55.9%;
+            width: 64.9%;
             margin-left: 1rem;
             margin-bottom: 5.5rem;
         }

@@ -70,11 +70,13 @@
         }
     }
     &__line {
+        display: none;
         margin: 7.3rem auto;
         width: 157.9rem;
         height: 1px;
         background: rgba(0, 0, 0, 1);
         @include respond(tab-port) {
+            display: block;
             margin: 6rem auto;
             width: 82.6rem;
         }

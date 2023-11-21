@@ -73,8 +73,9 @@
         justify-content: space-between;
     }
     &__item {
-        width: 14.4rem;
+        width: 13.3rem;
         height: 5.8rem;
+        text-align: center;
         font-size: 2.4rem;
         transition: .2s;
         backface-visibility: hidden;
@@ -92,8 +93,8 @@
             color: rgb(255, 158, 2);
         }
     }
+    
     &__link-phone {
-        font-family: $ff-gotham-pro;
         position: absolute;
         top: 3.2rem;
         right: 5.6rem;
@@ -102,6 +103,7 @@
         font-weight: 700;
         color: $color-dark;
         @include respond(tab-port) {
+            display: none;
             position: relative;
             margin-top: 0;
             top: 0;
@@ -111,7 +113,7 @@
         }
         @include respond(big-screen) {
             font-size: 2.4rem;
-            
+            display: block;
         }
     }
     &__link-phone:hover {
@@ -119,14 +121,20 @@
             color: rgb(255, 158, 2);
         }
     }
+    &__link-phone_mobile {
+        @include respond(tab-port) {
+            display: none;
+        }
+    }
     &__btn {
         display: none;
         @include respond(tab-port) {
             margin-left: .5rem;
             display: inline-block;
-            padding: 2.6rem 5.3rem 0;
+            padding: 2.6rem 5.3rem 2.6rem;
             background: rgba(215, 175, 109, 1);
             font-size: 2rem;
+            color: #000;
             font-weight: 700;
             border-top-left-radius: 13px;
             border-bottom-left-radius: 13px;

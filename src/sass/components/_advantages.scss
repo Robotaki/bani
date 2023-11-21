@@ -6,7 +6,7 @@
     box-shadow: 10px 7px 18px 0px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(7.5px);
     @include respond(tab-port) {
-        width: 629px;
+        width: 62.9rem;
         padding: 14.5rem 0 5.4rem 0;
     }
     @include respond(big-screen) {
@@ -34,9 +34,33 @@
         font-size: 2rem;
         color: rgba(0, 0, 0, 1);
     }
+    &__container {
+        position: relative;
+        height: 11.2rem;
+        @include respond(tab-port) {
+            height: 33.1rem;
+        }
+        @include respond(big-screen) {
+            height: 44.2rem;
+        }
+    }
+    #block1 {
+        animation: fadeOut 6s forwards;
+        @include respond(tab-port) {
+            animation: none;
+        }
+    }
+    #block2 {
+        animation: fadeIn 8s linear;
+        @include respond(tab-port) {
+            animation: none;
+        }
+    }
     &__title {
+        position: absolute;
         padding-left: 1.7rem;
         @include respond(tab-port) {
+            position: relative;
             width: 58.1rem;
             padding-left: 5.5rem;
             font-size: 4rem;
@@ -50,21 +74,13 @@
         }
     }
     &__content-center {
-        display: none;
-        @include respond(tab-port) {
-            display: block;
-        }
+        display: block;
         @include respond(big-screen) {
             padding-left: 3rem;
         }
     }
-    &__text-center {
-        display: none;
-        @include respond(big-screen) {
-            display: block;
-        }
-    }
     &__btn {
+        display: none;
         @include respond(tab-port) {
             display: inline-block;
             padding: 4rem 6rem;
@@ -76,10 +92,18 @@
             font-size: 2.4rem;
             padding: 4rem 6.2rem;
             margin-bottom: 3.6rem;
+            margin-left: 0;
         }
     }
     &__text-center {
+        display: block;
+        font-size: 1.3rem;
+        margin-bottom: 0;
+        @include respond(tab-port) {
+            display: none;
+        }
         @include respond(big-screen) {
+            display: block;
             font-size: 2rem;
         }
     }
@@ -87,18 +111,28 @@
         font-weight: 700;
     }
     &__text-center:not(:last-child) {
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
+        @include respond(tab-port) {
+            margin-bottom: 2rem;
+        }
+    }
+    &__text-center:nth-child(3) {
+        display: none;
+        @include respond(big-screen) {
+            display: block;
+        }
     }
     &__items {
         padding-top: 2rem;
         display: flex;
         justify-content: space-between;
         @include respond(tab-port) {
-            margin: 0 auto;
+            margin: 11.3rem auto 0;
             padding-top: 0;
-            width: 579px;
+            width: 57.9rem;
         }
         @include respond(big-screen) {
+            width: 69.1rem;
             padding-top: 5.1rem;
         }
     }
