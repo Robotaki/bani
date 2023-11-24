@@ -1,0 +1,54 @@
+.error {
+    position: relative;
+    z-index: 2;
+    margin: 0 auto;
+    width: 73.59vw;
+    text-transform: uppercase;
+    color: #fff;
+    @include respond(tab-port) {
+        width: 60.78vw;
+    }
+    @include respond(big-screen) {
+        width: 60.57vw;
+    }
+    &__title {
+        display: block;
+        font-size: 18.99vw;
+        margin-bottom: 3.11vh;
+        @include respond(tab-port) {
+            font-size: 19.6vw;
+            margin-bottom: 3.12vh;
+        }
+        @include respond(big-screen) {
+            font-size: 19.53vw;
+            margin-bottom: 3.14vh;
+        }
+    }
+    &__subtitle {
+        font-size: 4.747vw;
+        margin-bottom: 5.95vh;
+        @include respond(tab-port) {
+            font-size: 3.92vw;
+            margin-bottom: 5.20vh;
+        }
+        @include respond(big-screen) {
+            font-size: 3.90vw;
+            margin-bottom: 6.94vh;
+        }
+    }
+    &__link {
+        display: inline-block;
+        font-size: 4.45vw;
+        padding: 1.61vh 8.90vw;
+        color: #fff;
+        border: 1px solid rgba(246, 128, 79, 1);
+        @include respond(tab-port) {
+            font-size: 3.13vw;
+            padding: 2.47vh 5.09vw;
+        }
+        @include respond(big-screen) {
+            font-size: 3.12vw;
+            padding: 2.40vh 5.20vw;
+        }
+    }
+}
