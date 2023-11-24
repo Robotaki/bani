@@ -10,19 +10,19 @@
         backdrop-filter: blur(12px);
         box-shadow: none;
     }
-    
     &__list {
         display: flex;
     }   
     &__content {
         display: flex;
+        justify-content: space-between;
         align-items: center;
         position: relative;
         z-index: 1;
         padding: 1.5rem 0 2rem 1.1rem;
         width: 100%;
         @include respond(tab-port) {
-            padding: 0 0 0 6.1rem;
+            padding: 0 0 0 61px;
         }
         @include respond(big-screen) {
             padding: 0 0 0 3.7rem;
@@ -62,7 +62,7 @@
     }
     &__nav {
         @include respond(tab-port) {
-            width: 64.3rem;
+            width: 756px;
         }
         @include respond(big-screen) {
             display: block;
@@ -74,7 +74,7 @@
     }
     &__item {
         width: 13.3rem;
-        height: 5.8rem;
+        
         text-align: center;
         font-size: 2.4rem;
         transition: .2s;
@@ -84,13 +84,20 @@
             color: #000;
         }
         @include respond(tab-port) {
-            font-size: 2rem;
+            font-size: 20px;
+            width: 113px;
+            height: 58px;
+        }
+        @include respond(big-screen) {
+            
         }
     }
     &__item:hover {
-        border-bottom: 1px solid rgb(255, 158, 2);
-        a {
-            color: rgb(255, 158, 2);
+        @include respond(tab-port) {
+            border-bottom: 1px solid rgb(255, 158, 2);
+            a {
+                color: rgb(255, 158, 2);
+            }
         }
     }
     
@@ -131,9 +138,9 @@
         @include respond(tab-port) {
             margin-left: .5rem;
             display: inline-block;
-            padding: 2.6rem 5.3rem 2.6rem;
+            padding: 16px 33px;
             background: rgba(215, 175, 109, 1);
-            font-size: 2rem;
+            font-size: 20px;
             color: #000;
             font-weight: 700;
             border-top-left-radius: 13px;

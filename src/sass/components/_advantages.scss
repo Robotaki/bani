@@ -6,8 +6,8 @@
     box-shadow: 10px 7px 18px 0px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(7.5px);
     @include respond(tab-port) {
-        width: 62.9rem;
-        padding: 14.5rem 0 5.4rem 0;
+        width: 629px;
+        padding: 145px 0 54px 0;
     }
     @include respond(big-screen) {
         width: 81.7rem;
@@ -16,8 +16,8 @@
     &__logotype {
         display: none;
         @include respond(tab-port) {
-            margin: 6.9rem auto 9.9rem;
-            width: 16.4rem;
+            margin: 59px auto 99px;
+            width: 164px;
             display: flex;
             align-items: flex-end;
         }
@@ -28,43 +28,48 @@
     &__img {
         width: 10.4rem;
         height: 10.4rem;
+        @include respond(tab-port) {
+            width: 104px;
+            height: 104px;
+        }
     }
     &__name {
         font-family: $ff-kelly-slab;
         font-size: 2rem;
         color: rgba(0, 0, 0, 1);
+        @include respond(tab-port) {
+            font-size: 20px;
+        }
     }
     &__container {
         position: relative;
         height: 11.2rem;
         @include respond(tab-port) {
-            height: 33.1rem;
+            height: 331px;
         }
         @include respond(big-screen) {
             height: 44.2rem;
         }
     }
     #block1 {
-        animation: fadeOut 6s forwards;
-        @include respond(tab-port) {
-            animation: none;
-        }
+        animation: fadeOut 4s forwards;
+        animation-delay: 4s;
+        backface-visibility: hidden;
     }
     #block2 {
-        animation: fadeIn 8s linear;
-        @include respond(tab-port) {
-            animation: none;
-        }
+        opacity: 0;
+        animation: fadeIn 4s forwards;
+        animation-delay: 4s;
     }
     &__title {
         position: absolute;
         padding-left: 1.7rem;
         @include respond(tab-port) {
             position: relative;
-            width: 58.1rem;
-            padding-left: 5.5rem;
-            font-size: 4rem;
-            margin-bottom: 6.9rem;
+            width: 581px;
+            padding-left: 55px;
+            font-size: 40px;
+            margin-bottom: 69px;
         }
         @include respond(big-screen) {
             width: 67.8rem;
@@ -75,6 +80,7 @@
     }
     &__content-center {
         display: block;
+
         @include respond(big-screen) {
             padding-left: 3rem;
         }
@@ -83,10 +89,10 @@
         display: none;
         @include respond(tab-port) {
             display: inline-block;
-            padding: 4rem 6rem;
-            font-size: 2.4rem;
-            margin-left: 5.5rem;
-            margin-bottom: 11.6rem;
+            padding: 40px 60px;
+            font-size: 24px;
+            margin-left: 55px;
+            margin-bottom: 116px;
         }
         @include respond(big-screen) {
             font-size: 2.4rem;
@@ -113,7 +119,7 @@
     &__text-center:not(:last-child) {
         margin-bottom: 1rem;
         @include respond(tab-port) {
-            margin-bottom: 2rem;
+            margin-bottom: 20px;
         }
     }
     &__text-center:nth-child(3) {
@@ -127,9 +133,9 @@
         display: flex;
         justify-content: space-between;
         @include respond(tab-port) {
-            margin: 11.3rem auto 0;
+            margin: 113px auto 0;
             padding-top: 0;
-            width: 57.9rem;
+            width: 604px;
         }
         @include respond(big-screen) {
             width: 69.1rem;
@@ -149,7 +155,7 @@
         @include respond(tab-port) {
             display: block;
             margin-left: 0;
-            height: 0.2rem;
+            height: 2px;
         }
         @include respond(big-screen) {
             margin-left: 5.3rem;
@@ -178,17 +184,17 @@
     }
     &__line-bottom_1 {
         @include respond(tab-port) {
-            margin-left: 5.4rem;
+            margin-left: 54px;
         }
     }
     &__line-bottom_2 {
         @include respond(tab-port) {
-            margin-left: 5.4rem;
+            margin-left: 54px;
         }
     }
     &__line-bottom_3 {
         @include respond(tab-port) {
-            margin-left: 5.4rem;
+            margin-left: 54px;
         }
     }
     &__line-left {
@@ -203,10 +209,10 @@
     &__line-right {
         display: none;
         @include respond(tab-port) {
-            margin-top: 1.2rem;
+            margin-top: 12px;
             display: block;
-            width: 0.2rem;
-            height: 5.5rem;
+            width: 2px;
+            height: 55px;
         }
         @include respond(big-screen) {
             width: 0.5rem;
@@ -215,7 +221,7 @@
     }
     &__line-right_2 {
         @include respond(tab-port) {
-            margin-top: 1.5rem;
+            margin-top: 15px;
         }
     }
     &__text {
@@ -224,8 +230,8 @@
         width: 77.2%;
         font-weight: 700;
         @include respond(tab-port) {
-            padding: 1.2rem 1rem 1rem 0;
-            font-size: 1.5rem;
+            padding: 12px 10px 10px 0;
+            font-size: 15px;
             width: 14rem;
         }
         @include respond(big-screen) {

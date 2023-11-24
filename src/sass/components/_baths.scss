@@ -7,20 +7,20 @@
         margin: 1.9rem 0 0 21rem;
     }
     @include respond(tab-port) {
-        width: 82.6rem;
-        padding: 0 0 5.6rem 2.5rem;
-        font-size: 2.1rem;
+        width: 826px;
+        padding: 0 0 56px 25px;
+        font-size: 21px;
         span {
             display: block;
-            font-size: 2.5rem;
+            font-size: 25px;
             font-weight: 700;
-            margin: 0 0 0 11rem;
+            margin: 0 0 0 110px;
         }
     }
     @include respond(big-screen) {
         margin: 0 0 9rem 21.7rem;
         padding: 0 0 10.7rem 0;
-        width: 1579px;
+        width: 157.9rem;
         font-size: 4rem;
         span {
             margin: 0 0 0 21rem;
@@ -38,7 +38,7 @@
         @include respond(tab-port) {
             justify-content: space-between;
             img {
-                margin-right: 1rem;
+                margin-right: 10px;
             }
         }
         @include respond(big-screen) {
@@ -51,7 +51,7 @@
         @include respond(tab-port) {
             flex-direction: row-reverse;
             img {
-                margin-left: 1rem;
+                margin-left: 10px;
             }
         }
         @include respond(big-screen) {
@@ -77,8 +77,8 @@
         background: rgba(0, 0, 0, 1);
         @include respond(tab-port) {
             display: block;
-            margin: 6rem auto;
-            width: 82.6rem;
+            margin: 60px auto;
+            width: 826px;
         }
         @include respond(big-screen) {
             margin: 7.3rem auto;
@@ -89,7 +89,7 @@
         img {
             width: 100%;
             @include respond(tab-port) {
-                width: 45.3rem;
+                width: 453px;
             }
             @include respond(big-screen) {
                 width: 100%;
@@ -98,7 +98,7 @@
     }
     &__img-4 {
         @include respond(tab-port) {
-            margin-top: 4.6rem;
+            margin-top: 46px;
         }
     }
     &__desc {
@@ -106,28 +106,36 @@
         margin-top: 2.3rem;
         width: 27.3rem;
         @include respond(tab-port) {
-            width: 81.2rem;
-            padding-left: 3.25rem;
+            width: 812px;
+            padding-left: 32.5px;
         }
         @include respond(big-screen) {
             width: 90.4rem;
         }
     }
+    &__desc_2 {
+        @include respond(tab-port) {
+            margin-top: 85px;
+        }
+    }
     &__desc-3 {
         @include respond(tab-port) {
-            margin-top: 4.8rem;
+            margin-top: 100px;
         }
     }
     &__desc-4 {
+        @include respond(tab-port) {
+            margin-top: 107px;
+        }
     }
     &__title {
         margin-bottom: 1.2rem;
         font-size: 2rem;
         font-weight: 700;
         @include respond(tab-port) {
-            font-size: 2.5rem;
-            margin-top: -3rem;
-            margin-bottom: 2.6rem;
+            font-size: 25px;
+            margin-top: -30px;
+            margin-bottom: 26px;
         }
         @include respond(big-screen) {
             font-size: 4.8rem;
@@ -139,8 +147,9 @@
         font-size: 1.4rem;
         line-height: 130%;
         @include respond(tab-port) {
-            font-size: 1.25rem;
+            font-size: 12.5px;
             line-height: 120%;
+            margin-bottom: 20px;
         }
         @include respond(big-screen) {
             font-size: 2.4rem;
@@ -149,7 +158,7 @@
     }
     &__text_width-2 {
         @include respond(tab-port) {
-            width: 41.9rem;
+            width: 648px;
         }
         @include respond(big-screen) {
             width: 81rem;
@@ -158,7 +167,7 @@
     &__text_width-3 {
         width: 27.6rem;
         @include respond(tab-port) {
-            width: 48.7rem;
+            width: 653px;
         }
         @include respond(big-screen) {
             width: 87.7rem;
@@ -166,7 +175,7 @@
     }
     &__text_width-4 {
         @include respond(tab-port) {
-            width: 47.7rem;
+            width: 652px;
         }
         @include respond(big-screen) {
             width: 84.1rem;

@@ -17,7 +17,6 @@
         align-items: center;
         background-color: #000;
         margin-bottom: 2rem;
-        
         .flayer {
             position: absolute;
             top: 0;
@@ -34,8 +33,13 @@
             -moz-animation: flare-telegramm 2s infinite linear;
             -ms-animation: flare-telegramm 2s infinite linear;
             -o-animation: flare-telegramm 2s infinite linear;
-        }      
+        }   
+        @include respond(tab-port) {
+            width: 70px;
+            height: 70px;
+        }   
     }
+    
     .phone {
         position: relative;
         overflow-x: hidden;
@@ -62,11 +66,16 @@
             -moz-transform: skewX(-45deg);
             -ms-transform: skewX(-45deg);
             -o-transform: skewX(-45deg);
-        }         
+        }
+        @include respond(tab-port) {
+            width: 70px;
+            height: 70px;
+        }        
     }
     .vidgets-icon {
         width: 4rem;
     }  
+
 }
 .vidgets.active {
     bottom: 1.428em;

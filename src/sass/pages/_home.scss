@@ -3,7 +3,7 @@
     background: url('../../img/mobile/first-section/bg.jpg') center / cover no-repeat;
     @include respond(tab-port) {
         padding-top: 0;
-        background: url('../../img/desctop/first-section/bg.jpg') -33.8rem 0 / cover no-repeat;
+        background: url('../../img/desctop/first-section/bg.jpg') center / cover no-repeat;
     }
     @include respond(big-screen) {
         padding-top: 0;
@@ -14,7 +14,7 @@
     width: 100%;
     padding: 3.6rem 0 4.8rem;
     @include respond(tab-port) {
-        padding: 13.3rem 0 19.3rem;
+        padding: 113px 0 193px;
     }
     @include respond(big-screen) {
         padding: 9.4rem 0 5.6rem;
@@ -24,17 +24,17 @@
     padding: 3.7rem 1.7rem 9.6rem;
     background: url('../../img/mobile/third-section/bg.jpg') center / cover no-repeat;
     @include respond(tab-port) {
-        padding: 4.9rem 15.8rem 9.9rem;
+        padding: 49px 158px 99px;
+        background: url('../../img/desctop/third-section/bg.jpg') center / cover no-repeat;
     }
     @include respond(big-screen) {
         padding: 11.9rem 17rem 7.25rem;
-        background: url('../../img/desctop/third-section/bg.jpg') center / cover no-repeat;
     }
 }
 .section-stages {
     padding: 6rem 0 4.5rem;
     @include respond(tab-port) {
-        padding: 14.3rem 0 12.8rem;
+        padding: 143px 0 128px;
     }
     @include respond(big-screen) {
         padding: 17.2rem 13.9rem 20.8rem;
@@ -42,12 +42,11 @@
 }
 .section-reviews {
     padding-bottom: 12.9rem;
-    
 }
 .section-questions {
     padding-bottom: 10.4rem;
     @include respond(tab-port) {
-        padding: 8rem 0 13.5rem;
+        padding: 80px 0 135px;
         background: rgba(219, 209, 189, 1);
     }
     @include respond(big-screen) {
@@ -57,7 +56,7 @@
 .section-construction {
     padding-bottom: 18rem;
     @include respond(tab-port) {
-        padding: 10.8rem 0 11.5rem;
+        padding: 108px 0 115px;
     }
     @include respond(big-screen) {
         padding: 15.3rem 0;
@@ -75,7 +74,7 @@
 .section-feedback {
     padding-bottom: 2.8rem;
     @include respond(tab-port) {
-        padding-bottom: 11.3rem;
+        padding-bottom: 113px;
     }
     @include respond(big-screen) {
         padding: 10rem 0 30.7rem;
@@ -86,7 +85,7 @@
     overflow: hidden;
     background: rgba(96, 94, 94, 1);
     @include respond(tab-port) {
-        padding: 3.8rem 0 7.3rem;
+        padding: 38px 0 73px;
     }
 }
 .section-error {

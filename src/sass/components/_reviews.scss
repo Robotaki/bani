@@ -2,7 +2,7 @@
     position: relative;
     margin: 0 auto;
     @include respond(tab-port) {
-        padding: 0 7.3rem;
+        padding: 0 73px;
     }
     @include respond(big-screen) {
         padding: 0 10.3rem;
@@ -53,9 +53,9 @@
         color: $color-white;
         background: rgba(96, 94, 94, 1);
         @include respond(tab-port) {
-            margin-right: 3.2rem;
-            width: 26rem;
-            padding: 0 0 1.7rem 0;
+            margin-right: 32px;
+            width: 260px;
+            padding: 0 0 17px 0;
         }
         @include respond(big-screen) {
             margin-right: 3.2rem;
@@ -68,8 +68,8 @@
         width: 11.4rem;
         margin-top: -3.6rem;
         @include respond(tab-port) {
-            width: 23.2rem;
-            height: 23.2rem;
+            width: 232px;
+            height: 232px;
         }
         @include respond(big-screen) {
             width: 23.2rem;
@@ -85,7 +85,7 @@
     &__author {
         margin-top: -1.4rem;
         @include respond(tab-port) {
-            margin-top: 1.1rem;
+            margin-top: 11px;
         }
         @include respond(big-screen) {
             margin-top: 1.1rem;
@@ -99,7 +99,7 @@
         font-family: $ff-raleway;
         font-size: 1.2rem;
         @include respond(tab-port) {
-            font-size: 1.6rem;
+            font-size: 16px;
         }
         @include respond(big-screen) {
             font-size: 1.6rem;
@@ -111,7 +111,7 @@
         line-height: 100%;
         width: 11.4rem;
         @include respond(tab-port) {
-            font-size: 1.4rem;
+            font-size: 14px;
             line-height: 112%;
         }
         @include respond(big-screen) {
@@ -122,8 +122,8 @@
     &__slide-text_ms-1 {
         margin-bottom: 1.6rem;
         @include respond(tab-port) {
-            margin-bottom: 3.1rem;
-            width: 21.3rem; 
+            margin-bottom: 31px;
+            width: 213px; 
         }
         @include respond(big-screen) {
             margin-bottom: 3.1rem;
@@ -134,8 +134,8 @@
         margin-bottom: 4.4rem;
         width: 11.7rem;
         @include respond(tab-port) {
-            margin-bottom: 1.5rem;
-            width: 22.9rem;
+            margin-bottom: 15px;
+            width: 229px;
         }
         @include respond(big-screen) {
             margin-bottom: 1.5rem;
@@ -145,8 +145,8 @@
     &__slide-text_ms-3 {
         margin-bottom: 3.6rem;
         @include respond(tab-port) {
-            margin-bottom: 4.6rem;
-            width: 21.1rem;
+            margin-bottom: 46px;
+            width: 211px;
         }
         @include respond(big-screen) {
             margin-bottom: 4.6rem;
@@ -157,8 +157,8 @@
         width: 11rem;
         margin-bottom: 4.6rem;
         @include respond(tab-port) {
-            margin-bottom: 4.6rem;
-            width: 21.2rem;
+            margin-bottom: 46px;
+            width: 212px;
         }
         @include respond(big-screen) {
             margin-bottom: 4.6rem;
@@ -169,8 +169,8 @@
         width: 10.1rem;
         margin-bottom: 3.6rem;
         @include respond(tab-port) {
-            margin-bottom: 4.6rem;
-            width: 21.2rem;
+            margin-bottom: 46px;
+            width: 212px;
         }
         @include respond(big-screen) {
             margin-bottom: 4.6rem;
@@ -181,8 +181,8 @@
         width: 10.1rem;
         margin-bottom: 4.6rem;
         @include respond(tab-port) {
-            margin-bottom: 4.6rem;
-            width: 22.5rem;
+            margin-bottom: 46px;
+            width: 225px;
         }
         @include respond(big-screen) {
             margin-bottom: 4.6rem;
@@ -193,8 +193,8 @@
         width: 10.7rem;
         margin-bottom: 3.6rem;
         @include respond(tab-port) {
-            margin-bottom: 7.8rem;
-            width: 21.2rem;
+            margin-bottom: 78px;
+            width: 212px;
         }
         @include respond(big-screen) {
             margin-bottom: 7.8rem;
@@ -205,8 +205,8 @@
         width: 10.3rem;
         margin-bottom: 4.6rem;
         @include respond(tab-port) {
-            margin-bottom: 3.1rem;
-            width: 21.8rem;
+            margin-bottom: 31px;
+            width: 218px;
         }
         @include respond(big-screen) {
             margin-bottom: 3.1rem;
@@ -217,8 +217,8 @@
         width: 10rem;
         margin-bottom: 5.6rem;
         @include respond(tab-port) {
-            margin-bottom: 12.5rem;
-            width: 21.6rem;
+            margin-bottom: 125px;
+            width: 216px;
         }
         @include respond(big-screen) {
             margin-bottom: 12.5rem;
@@ -229,8 +229,8 @@
         width: 10.2rem;
         margin-bottom: 2.6rem;
         @include respond(tab-port) {
-            margin-bottom: 6.2rem;
-            width: 21.3rem;
+            margin-bottom: 62px;
+            width: 213px;
         }
         @include respond(big-screen) {
             margin-bottom: 6.2rem;
@@ -246,7 +246,7 @@
         font-weight: 700;
         color: rgba(229, 169, 144, 1);
         @include respond(tab-port) {
-            font-size: 1.6rem;
+            font-size: 16px;
             cursor: pointer;
         }
         @include respond(big-screen) {

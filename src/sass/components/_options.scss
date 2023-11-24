@@ -31,7 +31,7 @@
                     display: block;
                 }
                 .options__item_hover {
-                    display: block;
+                    display: flex;
                 }
             }
         }
@@ -53,6 +53,8 @@
     }
     &__item_hover {
         display: none;
+        flex-direction: column;
+        align-items: center;
         width: 22.7rem;
         height: 22.7rem;
         position: absolute;
@@ -62,17 +64,25 @@
         z-index: 2;
         cursor: pointer;
         transition: all .3s;
+        @include respond(tab-port) {
+            width: 250px;
+            height: 250px;
+        }
     }
     &__border_orange {
         display: flex;
-        justify-content: center;
-        align-items: center;
         width: 22.7rem;
         height: 22.7rem;
         border-radius: 50%;
         border: 2rem solid rgba(179, 135, 51, .4);
+        @include respond(tab-port) {
+            width: 170px;
+            height: 170px;
+
+        }
     }
     &__border_yellow {
+        position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -83,6 +93,10 @@
     }
     &__img-loop {
         display: block;
+        @include respond(tab-port) {
+            width: 50px;
+            height: 50px;
+        }
     }
     &__img {
         display: block;
@@ -101,10 +115,9 @@
         }
     }
     &__more {
-        margin-top: 6rem;
+        margin-top: 40px;
         display: block;
-        text-align: center;
-        font-size: 4rem;
+        font-size: 40px;
         font-weight: 700;
     }
     &__list {
@@ -119,7 +132,7 @@
         font-weight: 700;
         color: rgba(252, 239, 239, 1);
         @include respond(tab-port) {
-            font-size: 0.89rem;
+            font-size: 8.9px;
         }
         @include respond(big-screen) {
             font-size: 2rem;
@@ -144,8 +157,8 @@
         display: block;
         margin: 6rem auto;
         @include respond(tab-port) {
-            padding: 3.9rem 10.3rem;
-            font-size: 2.4rem;
+            padding: 39px 103px;
+            font-size: 24px;
         }
     }
     &__popup {
@@ -168,7 +181,7 @@
         background: rgba(255, 255, 255, 1);
         padding: 1.5rem 1.2rem;
         @include respond(tab-port) {
-            width: 95.9rem;
+            width: 959px;
         } 
         @include respond(big-screen) {
             width: 165.6rem;
@@ -177,7 +190,7 @@
     &__content-top {
         position: relative;
         @include respond(big-screen) {
-            padding-top: 7.9rem;
+            padding-top: 79px;
         }
     }
     &__content-body {
@@ -185,7 +198,7 @@
             display: flex;
             flex-direction: row-reverse;
             margin: 0 auto;
-            width: 88.2rem;
+            width: 882px;
         }   
         @include respond(big-screen) {
             width: 152.3rem;
@@ -194,8 +207,8 @@
     &__body-right {
         @include respond(tab-port) {
             position: relative;
-            width: 55.4rem;
-            padding-left: 3.24rem;
+            width: 554px;
+            padding-left: 32.4px;
         }
         @include respond(big-screen) {
             width: 95.1rem;
@@ -207,9 +220,9 @@
             content: '';
             display: block;
             width: 1px;
-            height: 49.65rem;
+            height: 543.5px;
             position: absolute;
-            bottom: -5.3rem;
+            bottom: -67px;
             left: 0;
             background: #000;
         }
@@ -220,7 +233,7 @@
     &__body-left {
         @include respond(tab-port) {
             margin: 0 auto;
-            width: 32.7rem;
+            width: 327px;
         }
         @include respond(big-screen) {
             width: 56.5rem;
@@ -290,6 +303,7 @@
         width: 4rem;
         height: 4rem;
         cursor: pointer;
+        z-index: 1;
     }
     &__close::before {
         content: '';
@@ -318,7 +332,7 @@
         font-weight: 700;
         padding: 2.5rem 0 0 1.3rem;
         @include respond(tab-port) {
-            font-size: 2.1rem;
+            font-size: 21px;
             padding-left: 0;
         }
         @include respond(big-screen) {
@@ -335,8 +349,9 @@
         height: 0.1rem;
         background: #000;
         @include respond(tab-port) {
-            width: 50.7rem;
-            margin-left: -3.2rem;
+            width: 507px;
+            margin-left: -32px;
+            height: 1px;
         }
         @include respond(big-screen) {
             width: 95.1rem;
@@ -351,6 +366,23 @@
         width: 15.6rem;
         line-height: 113%;
     }
+    &__popup-title_width-6 {
+        width: 18rem;
+        @include respond(tab-port) {
+            width: 406px;
+        }
+    }
+    &__popup-title_width-15 {
+        @include respond(tab-port) {
+            width: 406px;
+        }
+    }
+    &__popup-title_width-13 {
+        width: 18rem;
+        @include respond(tab-port) {
+            width: 440px;
+        }
+    }
     &__characteristics {
         margin: 0 auto 1.2rem;
         width: 20rem;
@@ -360,9 +392,9 @@
         font-size: 1.3rem;
         font-weight: 700;
         @include respond(tab-port) {
-            margin: 0 0 1.42rem;
-            font-size: 1.38rem;
-            width: 22.4rem;
+            margin: 0 0 14.2px;
+            font-size: 13.8px;
+            width: 224px;
         }
         @include respond(big-screen) {
             margin: 0 0 2.4rem 0;
@@ -373,7 +405,7 @@
     &__name {
         width: 11.7rem;
         @include respond(tab-port) {
-            width: 12.5rem;
+            width: 125px;
         }
         @include respond(big-screen) {
             width: 21.5rem;
@@ -386,8 +418,8 @@
         width: 27.4rem;
         margin: 0 auto 1.8rem;
         @include respond(tab-port) {
-            width: 52.2rem;
-            padding: 5.9rem 0 3.45rem;
+            width: 522px;
+            padding: 59px 0 34.5px;
         }
         @include respond(big-screen) {
             margin: 0;
@@ -406,8 +438,8 @@
         height: .5rem;
         @include respond(tab-port) {
             right: 1px;
-            height: .75rem;
-            width: 47.2rem;
+            height: 7.5px;
+            width: 472px;
         }
         @include respond(big-screen) {
             width: 81.5rem;
@@ -418,8 +450,8 @@
         height: 26.1rem;
         width: .5rem;
         @include respond(tab-port) {
-            height: 18.3rem;
-            width: 0.75rem;
+            height: 183px;
+            width: 7.5px;
         }
         @include respond(big-screen) {
             height: 28.2rem;
@@ -435,9 +467,9 @@
         gap: 1.8rem 4.1rem;
         align-items: center;
         @include respond(tab-port) {
-            font-size: 1.38rem;
+            font-size: 13.8px;
             margin: 0 auto;
-            width: 43.5rem;
+            width: 435px;
         }
         @include respond(big-screen) {
             width: 75rem;
@@ -448,7 +480,7 @@
     &__slice-name {
         width: 12.7rem;
         @include respond(tab-port) {
-            width: 26.7rem;
+            width: 267px;
         }
         @include respond(big-screen) {
             width: 47rem;
@@ -460,9 +492,9 @@
         display: flex;
         justify-content: space-between;
         @include respond(tab-port) {
-            margin-top: 1.39rem;
-            margin-bottom: 2.72rem;
-            width: 39.7rem;
+            margin-top: 13.9px;
+            margin-bottom: 27.2px;
+            width: 389px;
         }
         @include respond(big-screen) {
             margin-top: 2.4rem;
@@ -476,8 +508,9 @@
         text-align: center;
         border: 1px solid rgba(105, 62, 27, 1);
         @include respond(tab-port) {
-            width: 6.42rem;
-            padding: .4rem 0 .2rem;
+            width: 642px;
+            padding: 4px 0 2px;
+            margin-right: 2px;
         }
         @include respond(big-screen) {
             width: 11.1rem;
@@ -513,37 +546,37 @@
         display: none;
         @include respond(tab-port) {
             display: block;
-            margin: 0 auto .81rem;
+            margin: 0 auto 8.1px;
         }
     }
     &__slice-img_mn-1 {
         @include respond(tab-port) {
-            width: 1.96rem;
+            width: 19.6px;
         }
     }
     &__slice-img_mn-2 {
         @include respond(tab-port) {
-            width: 2.25rem;
+            width: 22.5px;
         }
     }
     &__slice-img_mn-3 {
         @include respond(tab-port) {
-            width: 3rem;
+            width: 30px;
         }
     }
     &__slice-img_mn-4 {
         @include respond(tab-port) {
-            width: 3.35rem;
+            width: 33.5px;
         }
     }
     &__slice-img_mn-5 {
         @include respond(tab-port) {
-            width: 3.7rem;
+            width: 37px;
         }
     }
     &__slice-img_mn-6 {
         @include respond(tab-port) {
-            width: 4.05rem;
+            width: 40.5px;
         }
     }
     &__slice-img_dn {
@@ -585,7 +618,7 @@
         }
     }
     &__scheme-img_desctop {
-        display: none;
+        display: block;
         @include respond(tab-port) {
             display: block;
             margin-top: 0;
@@ -624,9 +657,9 @@
             border-radius: 11px;
             margin: 0 auto;
             text-align: center;
-            width: 17.4rem;
-            font-size: 1.15rem;
-            padding: 1.15rem 0;
+            width: 174px;
+            font-size: 11.5px;
+            padding: 11.5px 0;
         }
         @include respond(big-screen) {
             width: 30.1rem;
