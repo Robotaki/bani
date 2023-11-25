@@ -18,6 +18,13 @@
             margin-left: 220px;
         }
     }
+    @include respond(big-screen) {
+        margin-left: 176px;
+        font-size: 40px;
+        span {
+            font-size: 48px;
+        }
+    }
 }
 .questions {
     display: flex;
@@ -27,7 +34,7 @@
         width: 564px;
     }
     @include respond(big-screen) {
-        width: 106.7rem;
+        width: 1067px;
     }
     &__item:not(:last-child) {
         margin-bottom: 2.26rem;
@@ -60,7 +67,7 @@
             z-index: 0;
         }
         @include respond(big-screen) {
-            height: 8.5rem;
+            height: 85px;
             border-radius: 23px;
         }
     }
@@ -88,10 +95,10 @@
             background: rgba(255, 255, 255, 1);
         }
         @include respond(big-screen) {
-            height: 8.5rem;
+            height: 85px;
             padding: 0;
             border-radius: 23px;
-            font-size: 3.2rem;
+            font-size: 32px;
             line-height: 96%;
         }   
     }
@@ -153,8 +160,8 @@
                 height: 9px;
             }
             @include respond(big-screen) {
-                width: 4.2rem;
-                height: 1.7rem;
+                width: 42px;
+                height: 17px;
             }
         }
         @include respond(tab-port) {
@@ -163,8 +170,8 @@
             right: 25px;
         }
         @include respond(big-screen) {
-            top: 2.5rem;
-            right: 5rem;
+            top: 25px;
+            right: 50px;
         }
     }
     
@@ -185,9 +192,9 @@
             font-size: 16px;
         }
         @include respond(big-screen) {
-            font-size: 3.2rem;
+            font-size: 32px;
             line-height: 120%;
-            padding: 3.1rem 0 0rem 4.9rem;
+            padding: 31px 0 0 49px;
             background: transparent;
         }
     }

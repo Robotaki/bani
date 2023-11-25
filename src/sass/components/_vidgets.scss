@@ -35,8 +35,8 @@
             -o-animation: flare-telegramm 2s infinite linear;
         }   
         @include respond(tab-port) {
-            width: 70px;
-            height: 70px;
+            width: 7rem;
+            height: 7rem;
         }   
     }
     
@@ -68,8 +68,8 @@
             -o-transform: skewX(-45deg);
         }
         @include respond(tab-port) {
-            width: 70px;
-            height: 70px;
+            width: 7rem;
+            height: 7rem;
         }        
     }
     .vidgets-icon {

@@ -2,13 +2,13 @@ $(document).ready(function() {
 	$('#form').submit(function(event) { // проверка на пустоту заполненных полей. Атрибут html5 — required не подходит (не поддерживается Safari)
 		event.preventDefault();
 		var phone = $("#phone").val();
-    	var email = $("#email").val();
+    	var name = $("#name").val();
 		var message = $("#message").val();
 		$.ajax({
 			type: "POST",
 			url: "send.php",
 			data: {
-				email: email,
+				name: name,
 				phone: phone,
 				message: message
 			}

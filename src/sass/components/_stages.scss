@@ -12,12 +12,12 @@
             }
         }
         @include respond(big-screen) {
-            padding-left: 6.4rem;
-            margin-bottom: 11.5rem;
-            font-size: 4rem;
+            padding-left: 64px;
+            margin-bottom: 115px;
+            font-size: 40px;
             span {
-                margin-left: 6.2rem;
-                font-size: 4.8rem;
+                margin-left: 62px;
+                font-size: 48px;
             }
         }
     }
@@ -29,7 +29,7 @@
             width: 882px;
         }
         @include respond(big-screen) {
-            width: 162.8rem;
+            width: 1628px;
         }
     }
     &__item {
@@ -40,8 +40,8 @@
             border-right: 1px solid rgba(0, 0, 0, 1);
         }
         @include respond(big-screen) {
-            padding: 5.9rem 1.3rem 0 0;
-            width: 33rem;
+            padding: 59px 13px 0 0;
+            width: 330px;
         }
     }
     &__item:not(:first-child) {
@@ -54,7 +54,7 @@
             padding-left: 13px;
         }
         @include respond(big-screen) {
-            padding-left: 3rem;
+            padding-left: 30px;
         }
     }
     &__item:nth-child(3) {
@@ -63,7 +63,7 @@
             padding-bottom: 0;
         }
         @include respond(big-screen) {
-            padding-left: 3rem;
+            padding-left: 30px;
         }
     }
     &__item:nth-child(4) {
@@ -71,7 +71,7 @@
             padding-left: 13px;
         }
         @include respond(big-screen) {
-            padding-left: 3rem;
+            padding-left: 30px;
         }
     }
     &__item:last-child {
@@ -79,7 +79,7 @@
             border-right: none;
         }
         @include respond(big-screen) {
-            padding-left: 3rem;
+            padding-left: 30px;
         }
         &::after {
             margin-top: 1.57rem;
@@ -98,7 +98,7 @@
             width: 164px;
         }
         @include respond(big-screen) {
-            width: 24.3rem;
+            width: 243px;
         }
     }
     &__paragraph-desctop {
@@ -115,7 +115,7 @@
         }
         @include respond(big-screen) {
             span {
-                font-size: 9.6rem;
+                font-size: 96px;
             }
         }
     }
@@ -155,8 +155,8 @@
             font-size: 13px;
         }
         @include respond(big-screen) {
-            margin: 3.5rem 0 9.5rem 2.3rem;
-            font-size: 2.4rem;
+            margin: 35px 0 95px 23px;
+            font-size: 24px;
         }
     }
     &__subtitle::before {
@@ -178,8 +178,8 @@
         }
         @include respond(big-screen) {
             width: 64.9%;
-            margin-left: 1rem;
-            margin-bottom: 5.5rem;
+            margin-left: 10px;
+            margin-bottom: 55px;
         }
     }
     &__subtitle_width-2::before {
@@ -192,8 +192,8 @@
             margin-bottom: 41px;
         }
         @include respond(big-screen) {
-            margin-bottom: 7.4rem;
-            margin-left: .4rem;
+            margin-bottom: 74px;
+            margin-left: 4px;
         }
     }
     &__subtitle_width-3::before {
@@ -204,9 +204,9 @@
             margin-bottom: 41px;
         }
         @include respond(big-screen) {
-            width: 25rem;
+            width: 250px;
             margin-left: 0;
-            margin-bottom: 7.4rem;
+            margin-bottom: 74px;
         }
     }
     &__subtitle_width-4::before {
@@ -218,9 +218,9 @@
             margin-bottom: 39px;
         }
         @include respond(big-screen) {
-            width: 15.8rem;
-            margin-left: .3rem;
-            margin-bottom: 7.3rem;
+            width: 158px;
+            margin-left: 3px;
+            margin-bottom: 73px;
         }
     }
     &__subtitle_width-5::before {
@@ -237,9 +237,9 @@
             padding: 0;
         }
         @include respond(big-screen) {
-            width: 24.3rem;
+            width: 243px;
             padding: 0;
-            font-size: 2rem;
+            font-size: 20px;
         }
     }
     &__text_width-2 {
@@ -248,7 +248,7 @@
             width: 130px;
         }
         @include respond(big-screen) {
-            width: 25.1rem;
+            width: 251px;
         }
     }
     &__text_width-3 {
@@ -257,7 +257,7 @@
             width: 140px;
         }
         @include respond(big-screen) {
-            width: 25.1rem;
+            width: 251px;
         }
     }
     &__text_width-4 {
@@ -266,7 +266,7 @@
             width: 135px;
         }
         @include respond(big-screen) {
-            width: 25.4rem;
+            width: 254px;
         }
     }
     &__text_width-5 {
@@ -275,7 +275,7 @@
             width: 131px;
         }
         @include respond(big-screen) {
-            width: 24.9rem;
+            width: 249px;
         }
     }
 }

@@ -1,5 +1,5 @@
 const hamb = document.querySelector("#hamb");
-const popup = document.querySelector("#popup");
+const popup = document.querySelector("#popup-burger");
 const body = document.body;
 
 // Клонируем меню, чтобы задать свои стили для мобильной версии

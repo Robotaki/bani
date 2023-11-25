@@ -18,13 +18,13 @@
         }
     }
     @include respond(big-screen) {
-        margin: 0 0 9rem 21.7rem;
+        margin: 0 0 90px 217px;
         padding: 0 0 10.7rem 0;
-        width: 157.9rem;
-        font-size: 4rem;
+        width: 1579px;
+        font-size: 40px;
         span {
-            margin: 0 0 0 21rem;
-            font-size: 4.8rem;
+            margin: 0 0 0 210px;
+            font-size: 48px;
         }
     }
 }
@@ -43,7 +43,7 @@
         }
         @include respond(big-screen) {
             img {
-                margin-right: 7rem;
+                margin-right: 70px;
             }
         }
     }
@@ -56,7 +56,7 @@
         }
         @include respond(big-screen) {
             img {
-                margin-left: 7rem;
+                margin-left: 70px;
             }
         }
     }
@@ -81,8 +81,8 @@
             width: 826px;
         }
         @include respond(big-screen) {
-            margin: 7.3rem auto;
-            width: 157.9rem;
+            margin: 73px auto;
+            width: 1579px;
         }
     }
     &__img {
@@ -127,6 +127,9 @@
         @include respond(tab-port) {
             margin-top: 107px;
         }
+        @include respond(big-screen) {
+            margin-top: 176px;
+        }
     }
     &__title {
         margin-bottom: 1.2rem;
@@ -138,8 +141,8 @@
             margin-bottom: 26px;
         }
         @include respond(big-screen) {
-            font-size: 4.8rem;
-            margin: -4rem 0 5.1rem;
+            font-size: 48px;
+            margin: -40px 0 51px;
         }
     }
     &__text {
@@ -152,7 +155,7 @@
             margin-bottom: 20px;
         }
         @include respond(big-screen) {
-            font-size: 2.4rem;
+            font-size: 24px;
             line-height: 120%;
         }
     }

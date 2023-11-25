@@ -21,6 +21,9 @@
             display: block;
             margin: 0 auto;
             max-width: 100%;
+            @include respond(tab-port) {
+                width: 30%;
+            }
         }
         span {
             display: block;
@@ -29,6 +32,10 @@
             text-align: center;
             text-transform: uppercase;
             color: $color-white;
+            @include respond(tab-port) {
+                margin-top: 20px;
+                font-size: 24px;
+            }
         }
         p {
             margin: .6rem auto 0;
@@ -36,6 +43,17 @@
             font-family: $ff-montserrat;
             font-size: 1.2rem;
             color: $color-white;
+            @include respond(tab-port) {
+                font-size: 24px;
+                width: 276px;
+                text-align: center;
+                margin-top: 20px;
+            }
+        }
+        @include respond(tab-port) {
+            width: 500px;
+            height: 400px;
+            padding: 50px 20px;
         }
     }
     &__btn {
@@ -45,5 +63,13 @@
         font-weight: 700;
         font-size: 0.9rem;
         padding: .7rem 3rem;
+        @include respond(tab-port) {
+            display: block;
+            margin: 20px auto 0;
+            text-align: center;
+            font-size: 20px;
+            width: 250px;
+        }
     }
+    
 }

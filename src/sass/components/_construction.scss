@@ -5,7 +5,7 @@
     }
     @include respond(big-screen) {
         margin: 0 auto;
-        width: 166.6rem;
+        width: 1666px;
     }
     &__title {
         margin-bottom: 12.4rem;
@@ -18,16 +18,18 @@
                 margin-left: 233px;
             }
             @include respond(big-screen) {
-                font-size: 4.8rem;
-                margin: 1.9rem 0 0 42.2rem;
+                font-size: 48px;
+                margin: 19px 0 0 422px;
             }
         }
         @include respond(tab-port) {
+            margin-bottom: 40px;
             padding-left: 0;
             font-size: 24px;
         }
         @include respond(big-screen) {
-            font-size: 4rem;
+            font-size: 40px;
+            margin-bottom: 66px;
         }
     }
     &__item {
@@ -42,8 +44,8 @@
         }
         @include respond(big-screen) {
             margin: 0 auto;
-            padding: 4.6rem 3.8rem 5.7rem;
-            width: 155.8rem;
+            padding: 46px 38px 57px;
+            width: 1558px;
         }
     }
     &__item_width-2 {
@@ -56,7 +58,7 @@
             padding-bottom: 71px;
         }
         @include respond(big-screen) {
-            padding-bottom: 11.3rem;
+            padding-bottom: 113px;
         }
     }
     &__number {
@@ -71,9 +73,9 @@
             left: -74px;
         }
         @include respond(big-screen) {
-            font-size: 20rem;
-            top: -11.2rem;
-            left: -8.9rem;
+            font-size: 200px;
+            top: -112px;
+            left: -89px;
         }
     }
     &__item-title {
@@ -85,8 +87,8 @@
             margin-bottom: 16px;
         }
         @include respond(big-screen) {
-            font-size: 3.2rem;
-            margin-bottom: 2.7rem;
+            font-size: 32px;
+            margin-bottom: 27px;
         }
     }
     &__item-title_mb-2 {
@@ -112,15 +114,15 @@
             width: 799px;
         }
         @include respond(big-screen) {
-            font-size: 3.2rem;
+            font-size: 32px;
             line-height: 113%;
-            width: 134.7rem;
+            width: 1347px;
         }
     }
     &__text-group_width-2 {
         width: 87.3%;
         @include respond(big-screen) {
-            width: 136.6rem;
+            width: 1366px;
         }
     }
     &__list {
@@ -140,9 +142,9 @@
             margin: 40px auto 30px;
         }
         @include respond(big-screen) {
-            margin: 6.6rem auto 6.9rem;
-            font-size: 3.2rem;
-            width: 130.4rem;
+            margin: 66px auto 69px;
+            font-size: 32px;
+            width: 1304px;
             line-height: 110%;
         }
     }

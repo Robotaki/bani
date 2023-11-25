@@ -45,13 +45,13 @@
             </div>
         </div>
     </nav>
-    <div class="popup" id="popup"></div>
+    <div class="popup-burger" id="popup-burger"></div>
     
     
     <header class="header" id="header">
         <div class="header__content">
             <div class="header__logotype logotype">
-                <img class="logotype__img" src="./img/mobile/icon/logotype.svg" alt="Image: logotype">
+                <img class="header__img logotype__img" src="./img/mobile/icon/logotype.svg" alt="Image: logotype">
                 <div class="header__name-logo logotype__name">
                     <a href="/"><span>ВАША</span><br> <span>БАНЯ</span></a>
                 </div>
@@ -146,7 +146,7 @@
         <!-- /.first__section -->
         <section class="secondary-section">
             <h2 class="secondary-title section-title">НАШИ <span>АКЦИИ</span></h2>
-            <div class="slider">
+            <div class="slider grab">
                 <div class="slider__item text-align-center">
                     <div class="slider__container">
                         <div class="slider__row">
@@ -4462,7 +4462,7 @@
         </section>
         <!-- /.section-stages -->
         <section id="reviews" class="section-reviews">
-            <div class="slider-reviews reviews">
+            <div class="slider-reviews reviews grab">
                 <div class="reviews__slide">
                     <div class="reviews__slide-block text-align-center">
                         <img class="reviews__slide-img" src="./img/mobile/fourth-section/author-1.png" alt="Image: Profile author">
@@ -4483,10 +4483,16 @@
                             Компания,  “Ваша Баня” заслуживает наивысших похвал. Работа выполнена профессионально и в срок. Каждая деталь, начиная от фундамента и заканчивая кровельными работы, выполнена с превосходным качеством. Наша баня стала настоящим украшением нашего загородного участка. Безусловно, рекомендую эту компанию всем своим друзьям и знакомым.
                         </p>
                     </div>
-                    
-                    <button class="reviews__slide-btn">Смотреть отзыв</button>
+                    <button class="reviews__slide-btn openPopupButton" data-target="popup29">Смотреть отзыв</button>
                 </div>
                 <!-- /.reviews__slide -->
+                <div id="popup29" class="reviews__popup popup" data-target="popup29">
+                    <div class="reviews__body">
+                        <div class="reviews__close close" id="closePopup" data-target="popup29"></div>
+                        <img src="./img/mobile/fourth-section/popup/reviews-1.png" alt="Отзыв Ивана">
+                    </div>
+                </div>
+                <!-- /.options__popup -->
                 <div class="reviews__slide">
                     <div class="reviews__slide-block text-align-center">
                         <img class="reviews__slide-img" src="./img/mobile/fourth-section/author-2.png" alt="Image: Profile author">
@@ -5012,7 +5018,7 @@
         </section>
         <!-- /.section-baths -->
         <section class="section-feedback">
-            <div class="feedback text-align-center">
+            <div class="feedback">
                 <h3 class="feedback__title">Позвольте нам помочь Вам осуществить вашу мечту о собственной бане.</h3>
                 <div class="feedback__body">
                     <div class="feedback__body_left">
@@ -5028,10 +5034,14 @@
                     <!-- /.ffedback__body_left -->
                     <div class="feedback__body_right">
                         <form id="form" class="form feedback__form" name="form" action="send.php">
-                            <input autocomplete="on" id="phone" class="input feedback__input feedback__input_phone __req" type="tel" name="phone" placeholder="номер телефона">
-                            <input autocomplete="on" id="email" class="input feedback__input __req __email" type="email" name="email" placeholder="email">
-                            <textarea class="input feedback__input feedback__input_height" id="message" placeholder="Сообщение" name="message"></textarea>
-                            <button id="input__submit" class="input__submit feedback__btn btn feedback__btn_mobile" type="submit" name="submit" value="Отправить">Отправить</button>
+                            <div class="feedback__content">
+                                <input autocomplete="on" id="name" class="input feedback__input __req __email" type="name" name="name" placeholder="Имя">
+                                <input autocomplete="on" id="phone" class="input feedback__input feedback__input_phone __req" type="tel" name="phone" placeholder="номер телефона">
+                                <textarea class="input feedback__input feedback__input_height" id="message" placeholder="Сообщение" name="message"></textarea>
+                            </div>
+                            <div class="feedback__block">
+                                <button id="input__submit" class="input__submit feedback__btn btn" type="submit" name="submit" value="Отправить">Отправить</button>
+                            </div>
                         </form>
                         <div id="overlay" class="overlay js-overlay-thank-you overlay-open">
                             <div class="overlay__flex">
@@ -5044,9 +5054,6 @@
                                     <a href="/" class="overlay__btn btn"><strong>На главную</strong></a>
                                 </div>
                             </div>
-                        </div>
-                        <div class="feedback__block_submit">
-                            <button id="input__submit" class="input__submit feedback__btn btn feedback__btn_desctop" type="submit" name="submit" value="Отправить">Отправить</button>
                         </div>
                     </div>
                     <!-- /.feedback__body_right -->
@@ -5096,7 +5103,7 @@
                                 <li class="footer__item">Московская обл.</li>
                                 <li class="footer__item">Нижегородская обл.</li>
                                 <li class="footer__item">Ленинградская обл.</li>
-                                <li class="footer__item">Волгодонская обл.</li>
+                                <li class="footer__item">Вологодская обл.</li>
                                 <li class="footer__item">Новгородская обл.</li>
                             </ul>
                         </div>
@@ -5110,7 +5117,7 @@
                         <li class="footer__item">Московская обл.</li>
                         <li class="footer__item">Нижегородская обл.</li>
                         <li class="footer__item">Ленинградская обл.</li>
-                        <li class="footer__item">Волгодонская обл.</li>
+                        <li class="footer__item">Вологодская обл.</li>
                         <li class="footer__item">Новгородская обл.</li>
                     </ul>
                 </div>
@@ -5136,7 +5143,7 @@
     <script type="text/javascript" src="./js/anchor.js"></script>
     <script type="text/javascript" src="./js/appearanceOfBlock.js"></script>
     <script type="text/javascript" src="./js/form.js"></script>
-    <script type="text/javascript" src="./js/formSend.js"></script>
+    <!-- <script type="text/javascript" src="./js/formSend.js"></script> -->
     <script type="text/javascript" src="./js/slick.min.js"></script>
     <script type="text/javascript" src="./js/slider.js"></script>
     <script type="text/javascript" src="./js/reviews-slider.js"></script>

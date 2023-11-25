@@ -3,15 +3,16 @@
     position: relative;
     width: 100%;
     background: rgba(217, 217, 217, 0.30);
-    box-shadow: 10px 7px 18px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 10px 4px 18px 0px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(7.5px);
+    overflow: hidden;
     @include respond(tab-port) {
         width: 629px;
         padding: 145px 0 54px 0;
     }
     @include respond(big-screen) {
-        width: 81.7rem;
-        padding: 29rem 2.7rem 2.9rem 1.2rem;
+        width: 817px;
+        padding: 290px 27px 29px 12px;
     }
     &__logotype {
         display: none;
@@ -48,23 +49,32 @@
             height: 331px;
         }
         @include respond(big-screen) {
-            height: 44.2rem;
+            height: 442px;
         }
     }
     #block1 {
         animation: fadeOut 4s forwards;
         animation-delay: 4s;
         backface-visibility: hidden;
+        @include respond (tab-port) {
+            animation: none;
+        }
+
     }
     #block2 {
         opacity: 0;
         animation: fadeIn 4s forwards;
         animation-delay: 4s;
+        @include respond (tab-port) {
+            animation: none;
+            opacity: 1;
+        }
     }
     &__title {
         position: absolute;
         padding-left: 1.7rem;
         @include respond(tab-port) {
+            display: block;
             position: relative;
             width: 581px;
             padding-left: 55px;
@@ -72,15 +82,14 @@
             margin-bottom: 69px;
         }
         @include respond(big-screen) {
-            width: 67.8rem;
-            padding-left: 4.7rem;
-            margin-bottom: 6.9rem;
-            font-size: 4.8rem;
+            width: 688px;
+            padding-left: 47px;
+            margin-bottom: 69px;
+            font-size: 48px;
         }
     }
     &__content-center {
         display: block;
-
         @include respond(big-screen) {
             padding-left: 3rem;
         }
@@ -95,9 +104,9 @@
             margin-bottom: 116px;
         }
         @include respond(big-screen) {
-            font-size: 2.4rem;
-            padding: 4rem 6.2rem;
-            margin-bottom: 3.6rem;
+            font-size: 24px;
+            padding: 40px 62px;
+            margin-bottom: 36px;
             margin-left: 0;
         }
     }
@@ -110,7 +119,7 @@
         }
         @include respond(big-screen) {
             display: block;
-            font-size: 2rem;
+            font-size: 20px;
         }
     }
     &__text-center:last-child {
@@ -126,6 +135,7 @@
         display: none;
         @include respond(big-screen) {
             display: block;
+            opacity: 1;
         }
     }
     &__items {
@@ -138,8 +148,8 @@
             width: 604px;
         }
         @include respond(big-screen) {
-            width: 69.1rem;
-            padding-top: 5.1rem;
+            width: 691px;
+            padding-top: 101px;
         }
     }
     &__line-top {
@@ -147,7 +157,7 @@
         width: 41.3%;
         height: 0.2rem;
         @include respond(big-screen) {
-            height: .5rem;
+            height: 5px;
         }
     }
     &__line-bottom {
@@ -158,28 +168,28 @@
             height: 2px;
         }
         @include respond(big-screen) {
-            margin-left: 5.3rem;
-            height: .5rem;
+            margin-left: 53px;
+            height: 5px;
 
         }
     }
     &__line-top_1 {
         width: 60.3%;
         @include respond(big-screen) {
-            width: 14.2rem;
+            width: 142px;
             margin-top: 0;
         }
     }
     &__line-top_2 {
         width: 52.3%;
         @include respond(big-screen) {
-            width: 14.2rem;
+            width: 142px;
         }
     }
     &__line-top_3 {
         width: 75.3%;
         @include respond(big-screen) {
-            width: 14.2rem;
+            width: 142px;
         }
     }
     &__line-bottom_1 {
@@ -202,8 +212,8 @@
         width: 0.2rem;
         height: 3.4rem;
         @include respond(big-screen) {
-            width: .5rem;
-            height: 7.4rem;
+            width: 5px;
+            height: 74px;
         }
     }
     &__line-right {
@@ -215,8 +225,8 @@
             height: 55px;
         }
         @include respond(big-screen) {
-            width: 0.5rem;
-            height: 7.4rem;
+            width: 5px;
+            height: 74px;
         }
     }
     &__line-right_2 {
@@ -235,9 +245,9 @@
             width: 14rem;
         }
         @include respond(big-screen) {
-            font-size: 1.6rem;
+            font-size: 16px;
             font-weight: 700;
-            width: 17.5rem;
+            width: 175px;
         }
     }
     &__text-2 {

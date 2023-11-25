@@ -4,8 +4,8 @@
         width: 5.7rem;
         height: 5.7rem;
         @include respond(big-screen) {
-            width: 10.4rem;
-            height: 10.4rem;
+            width: 104px;
+            height: 104px;
         }
     }
     &__name {
@@ -18,7 +18,7 @@
                 font-family: $ff-kelly-slab;
                 font-size: 1.6rem;
                 @include respond(big-screen) {
-                    font-size: 2rem;
+                    font-size: 20px;
                 }
             }
         }

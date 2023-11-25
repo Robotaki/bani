@@ -4,7 +4,7 @@
     width: 100%;
     background: rgba(217, 217, 217, 0.30);
     box-shadow: 10px 4px 18px 0px rgba(0, 0, 0, 0.25);
-    backdrop-filter: blur(9.5px);
+    backdrop-filter: blur(7.5px);
     overflow: hidden;
     @include respond (big-screen) {
         backdrop-filter: blur(12px);
@@ -25,7 +25,7 @@
             padding: 0 0 0 61px;
         }
         @include respond(big-screen) {
-            padding: 0 0 0 3.7rem;
+            padding: 0 0 0 37px;
         }
     }
     &__content::after {
@@ -47,7 +47,7 @@
         @include respond(big-screen) {
             display: flex;
             align-items: end;
-            margin-right: 28.4rem;
+            margin-right: 284px;
         }
     }
     &__content-text {
@@ -57,7 +57,7 @@
             justify-content: space-between;
         }
         @include respond(big-screen) {
-            width: 147rem;
+            width: 1470px;
         }
     }
     &__nav {
@@ -66,7 +66,8 @@
         }
         @include respond(big-screen) {
             display: block;
-            width: 93.7rem;
+            width: 897px;
+            font-size: 24px;
         }
     }
     &__list {
@@ -74,7 +75,6 @@
     }
     &__item {
         width: 13.3rem;
-        
         text-align: center;
         font-size: 2.4rem;
         transition: .2s;
@@ -87,9 +87,6 @@
             font-size: 20px;
             width: 113px;
             height: 58px;
-        }
-        @include respond(big-screen) {
-            
         }
     }
     &__item:hover {
@@ -119,7 +116,7 @@
             backface-visibility: hidden;
         }
         @include respond(big-screen) {
-            font-size: 2.4rem;
+            font-size: 24px;
             display: block;
         }
     }
@@ -153,11 +150,11 @@
             }
         }
         @include respond(big-screen) {
-            margin-left: 4.7rem;
-            font-size: 2rem;
-            padding: 2.6rem 5.4rem 1.9rem;
+            margin-left: 47px;
+            font-size: 20px;
+            padding: 26px 54px 19px;
             img {
-                margin-bottom: 1.5rem;
+                margin-bottom: 15px;
             }
         }
     }

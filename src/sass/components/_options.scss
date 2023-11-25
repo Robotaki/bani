@@ -173,7 +173,10 @@
         align-items: center;
         justify-content: center;
         z-index: 201;
-        overflow: scroll; 
+        overflow: scroll;
+        @include respond(big-screen) {
+            padding-top: 100px;
+        } 
     }
     &__content {
         margin: 0 auto;
@@ -184,7 +187,7 @@
             width: 959px;
         } 
         @include respond(big-screen) {
-            width: 165.6rem;
+            width: 1656px;
         } 
     }
     &__content-top {
@@ -201,7 +204,7 @@
             width: 882px;
         }   
         @include respond(big-screen) {
-            width: 152.3rem;
+            width: 1523px;
         }
     }
     &__body-right {
@@ -211,8 +214,8 @@
             padding-left: 32.4px;
         }
         @include respond(big-screen) {
-            width: 95.1rem;
-            padding-left: 5.6rem;
+            width: 951px;
+            padding-left: 56px;
         }
     }
     &__body-right::before {
@@ -227,7 +230,8 @@
             background: #000;
         }
         @include respond(big-screen) {
-            height: 77.7rem;
+            height: 790px;
+            bottom: -80px;
         }
     }
     &__body-left {
@@ -236,7 +240,7 @@
             width: 327px;
         }
         @include respond(big-screen) {
-            width: 56.5rem;
+            width: 565px;
         }
     }
     &__content-bottom {
@@ -248,8 +252,8 @@
         height: .3rem;
         background: $line-color-big;
         @include respond(big-screen) {
-            width: 9.5rem;
-            height: .7rem;
+            width: 95px;
+            height: 7px;
         }
     }
     &__line_h {
@@ -258,8 +262,8 @@
         width: .3rem;
         background: $line-color-big;
         @include respond(big-screen) {
-            height: 9.5rem;
-            width: .7rem;
+            height: 95px;
+            width: 7px;
         }
     }
     &__line_top-left {
@@ -337,8 +341,8 @@
         }
         @include respond(big-screen) {
             padding: 0;
-            font-size: 3.6rem;
-            margin-top: -6.1rem;
+            font-size: 36px;
+            margin-top: -61px;
         }
     }
     &__popup-title::after {
@@ -354,8 +358,8 @@
             height: 1px;
         }
         @include respond(big-screen) {
-            width: 95.1rem;
-            margin-left: -5.6rem;
+            width: 951px;
+            margin-left: -56px;
         }
     }
     &__popup-title_width-3 {
@@ -397,9 +401,9 @@
             width: 224px;
         }
         @include respond(big-screen) {
-            margin: 0 0 2.4rem 0;
-            width: 38.8rem;
-            font-size: 2.4rem;
+            margin: 0 0 24px 0;
+            width: 388px;
+            font-size: 24px;
         }
     }
     &__name {
@@ -408,7 +412,7 @@
             width: 125px;
         }
         @include respond(big-screen) {
-            width: 21.5rem;
+            width: 215px;
         }
     }
     &__slices {
@@ -423,8 +427,8 @@
         }
         @include respond(big-screen) {
             margin: 0;
-            width: 90.2rem;
-            padding: 8.9rem 0 5.9rem;
+            width: 902px;
+            padding: 89px 0 59px;
         }
     }
     &__slices-line {
@@ -442,8 +446,8 @@
             width: 472px;
         }
         @include respond(big-screen) {
-            width: 81.5rem;
-            height: 1.3rem;
+            width: 815px;
+            height: 13px;
         }
     }
     &__slices-line__right {
@@ -454,8 +458,8 @@
             width: 7.5px;
         }
         @include respond(big-screen) {
-            height: 28.2rem;
-            width: 1.3rem;
+            height: 282px;
+            width: 13px;
         }
     }
     &__content-slices {
@@ -472,9 +476,9 @@
             width: 435px;
         }
         @include respond(big-screen) {
-            width: 75rem;
-            font-size: 2.4rem;
-            gap: 3.1rem 10.5rem;
+            width: 750px;
+            font-size: 24px;
+            gap: 31px 105px;
         }
     }
     &__slice-name {
@@ -483,7 +487,7 @@
             width: 267px;
         }
         @include respond(big-screen) {
-            width: 47rem;
+            width: 470px;
         }
     }
     &__images {
@@ -497,9 +501,9 @@
             width: 389px;
         }
         @include respond(big-screen) {
-            margin-top: 2.4rem;
-            margin-bottom: 4.7rem;
-            width: 68.6rem;
+            margin-top: 24px;
+            margin-bottom: 47px;
+            width: 686px;
         }
     }
     &__block-img {
@@ -513,13 +517,13 @@
             margin-right: 2px;
         }
         @include respond(big-screen) {
-            width: 11.1rem;
-            padding: .7rem 1.4rem .5rem;
+            width: 111px;
+            padding: 7px 14px 5px;
         }
         span {
             @include respond(big-screen) {
                 display: block;
-                margin-top: 1.4rem;
+                margin-top: 14px;
             }
         }
     }
@@ -608,7 +612,7 @@
             margin-top: 0;
         }
         @include respond(big-screen) {
-            margin-top: -6rem;
+            margin-top: -60px;
         }
     }
     &__scheme-img_mobile {
@@ -624,7 +628,7 @@
             margin-top: 0;
         }
         @include respond(big-screen) {
-            margin-top: .7rem;
+            margin-top: 7px;
         }
     }
     &__scheme-img {
@@ -662,9 +666,9 @@
             padding: 11.5px 0;
         }
         @include respond(big-screen) {
-            width: 30.1rem;
-            padding: 2rem 9.4rem;
-            font-size: 2rem;
+            width: 301px;
+            padding: 20px 94px;
+            font-size: 20px;
         }
     }
 }

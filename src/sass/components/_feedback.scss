@@ -7,7 +7,7 @@
         width: 1005px;
     }
     @include respond(big-screen) {
-        width: 157.9rem;
+        width: 1579px;
     }
     &__title {
         margin-bottom: 3.8rem;
@@ -15,6 +15,7 @@
         font-size: 2rem;
         font-weight: 700;
         line-height: 91%;
+        text-align: center;
         @include respond(tab-port) {
             margin: 0 auto 88px;
             font-size: 31.7px;
@@ -22,12 +23,13 @@
             line-height: 123%;
         }
         @include respond(big-screen) {
-            margin: 0 auto 12.2rem;
-            font-size: 4.8rem; 
-            width: 104.2rem;
+            margin: 0 auto 122px;
+            font-size: 48px; 
+            width: 1042px;
         }
     }
     &__body {
+        text-align: center;
         @include respond(tab-port) {
             margin: 0 auto;
             display: flex;
@@ -35,7 +37,7 @@
             width: 1005px;
         }
         @include respond(big-screen) {
-            width: 151.9rem;
+            width: 1519px;
         }
     }
     &__text {
@@ -51,14 +53,14 @@
             line-height: 135%;
         }
         @include respond(big-screen) {
-            margin: 0 8.6rem 4rem 0;
-            width: 46.4rem;
-            font-size: 3.6rem;
+            margin: 0 26px 40px 0;
+            width: 464px;
+            font-size: 36px;
         }
     }
     &__group-icons {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         margin: 0 auto 3.9rem;
         width: 12.1rem;
         @include respond(tab-port) {
@@ -66,9 +68,9 @@
             width: 95px;
         }
         @include respond(big-screen) {
-            padding-left: 8.6rem;
+            padding-left: 86px;
             margin: 0 auto;
-            width: 24.2rem;
+            width: 242px;
             justify-content: center;
         }
     }
@@ -80,8 +82,8 @@
             background: rgba(0, 0, 0, 1);
         }
         @include respond(big-screen) {
-            margin: 0 8.6rem 3.1rem auto;
-            width: 29.5rem;
+            margin: 0 86px 31px auto;
+            width: 295px;
             height: 1px;
             background: rgba(0, 0, 0, 1);
         }
@@ -95,26 +97,29 @@
             height: 36px;
         }
         @include respond(big-screen) {
-            width: 5.2rem;
-            height: 5.2rem;
+            width: 52px;
+            height: 52px;
         }
     }
     &__icon_phone {
+        margin-top: -.9rem;
+        width: 4rem;
+        height: 4rem;
         @include respond(tab-port) {
             margin-top: -6px;
             width: 50px;
             height: 50px;
         }
         @include respond(big-screen) {
-            margin: -1.4rem 3.5rem 0;
-            width: 7.2rem;
-            height: 7.2rem;
+            margin: -14px 35px 0;
+            width: 72px;
+            height: 72px;
         }
     }
     &__body_right {
         position: relative;
     }
-    &__form {
+    &__content {
         margin: 0 auto;
         width: 26.3rem;
         @include respond(tab-port) {
@@ -123,9 +128,8 @@
             background: rgba(96, 94, 94, 1);
         }
         @include respond(big-screen) {
-            padding: 12.7rem 19rem 7.2rem 6.5rem;
-            width: 90.8rem;
-            
+            padding: 127px 190px 72px 65px;
+            width: 908px;
         }
     }
     &__input {
@@ -147,8 +151,8 @@
             font-weight: 400;
         }
         @include respond(big-screen) {
-            width: 65.3rem;
-            height: 9.9rem;
+            width: 653px;
+            height: 99px;
         }
     }
     input {
@@ -156,7 +160,7 @@
             margin-bottom: 35px;
         }
         @include respond(big-screen) {
-            margin-bottom: 5.3rem;
+            margin-bottom: 53px;
         }
     }
     input:nth-child(2) {
@@ -183,25 +187,13 @@
             height: 186px;
         }
         @include respond(big-screen) {
-            margin-top: 8.8rem;
-            height: 28.2rem;
+            margin-top: 88px;
+            height: 282px;
         }
     }
-    &__block_submit {
+    &__block {
         @include respond(tab-port) {
             display: flex;
-        }
-    }
-    &__btn_mobile {
-        display: inline-block;
-        @include respond(tab-port) {
-            display: none;
-        }
-    }
-    &__btn_desctop {
-        display: none;
-        @include respond(tab-port) {
-            display: block;
         }
     }
     &__btn {
@@ -213,9 +205,9 @@
             border-radius: 13px;
         }
         @include respond(big-screen) {
-            margin: 6.4rem auto 0 0;
-            font-size: 3.2rem;
-            padding: 3.5rem 12rem;
+            margin-top: 64px;
+            font-size: 32px;
+            padding: 35px 120px;
         }
     }
     &__logotype {
