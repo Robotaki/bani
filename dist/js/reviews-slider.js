@@ -4,13 +4,13 @@ $(document).ready(function () {
     variableWidth: true,
     slidesToShow: 2,
     slidesToScroll: 2,
+    infinite: true,
     responsive: [
       {
         breakpoint: 2500,
         settings: {
-          slidesToShow: 6,
-          slidesToScroll: 6,
-          infinite: true,
+          slidesToShow: 5,
+          slidesToScroll: 5,
           arrows: true,
         }
       },
@@ -19,7 +19,6 @@ $(document).ready(function () {
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
-          infinite: true,
           arrows: true,
         }
       },
@@ -28,7 +27,6 @@ $(document).ready(function () {
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
-          infinite: true,
           arrows: false,
         }
       },
@@ -37,7 +35,6 @@ $(document).ready(function () {
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
-          infinite: true,
           arrows: false,
         }
       },

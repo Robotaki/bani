@@ -76,7 +76,7 @@
         @include respond(tab-port) {
             display: block;
             position: relative;
-            width: 581px;
+            width: 605px;
             padding-left: 55px;
             font-size: 40px;
             margin-bottom: 69px;
@@ -240,7 +240,7 @@
         width: 77.2%;
         font-weight: 700;
         @include respond(tab-port) {
-            padding: 12px 10px 10px 0;
+            padding: 0 10px 10px 0;
             font-size: 15px;
             width: 14rem;
         }

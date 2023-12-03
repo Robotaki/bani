@@ -80,7 +80,7 @@
         max-width: 100%;
     }
     &__content {
-        padding-left: 1.7rem;
+        padding-left: .7rem;
     }
     &__author {
         margin-top: -1.4rem;
@@ -179,7 +179,7 @@
     }
     &__slide-text_ms-6 {
         width: 10.1rem;
-        margin-bottom: 4.6rem;
+        margin-bottom: 3.6rem;
         @include respond(tab-port) {
             margin-bottom: 46px;
             width: 225px;
@@ -259,54 +259,82 @@
         position: fixed;
         top: 0;
         left: 0;
-        width: 100vh;
-        height: 100vh;
+        width: 100%;
+        height: 100%;
         background: rgba(0, 0, 0, 0.7);
         align-items: center;
         justify-content: center;
         z-index: 201;
-        overflow: scroll;
         @include respond(big-screen) {
-            padding-top: 100px;
+            padding-top: 10px;
+            overflow: scroll;
         }
+
     }
     &__body {
+        position: relative;
         margin: 0 auto;
         width: 30.3rem;
         padding: 1.5rem 1.2rem;
+        @include respond(tab-port) {
+            width: 700px;
+        }
+        @include respond(big-screen) {
+            width: 900px;
+        }
     }
     &__close {
-        position: absolute;
-        top: 1.5rem;
-        right: 1.9rem;
-        border: 1px solid rgba(0, 0, 0, 1);
+        position: relative;
+        border: 1px solid #fff;
         border-radius: 50%;
+        margin: 30% auto 10%;
         width: 4rem;
         height: 4rem;
         cursor: pointer;
         z-index: 1;
+        @include respond(tab-port) {
+            margin-top: 0;
+        }
+        @include respond(big-screen) {
+            margin-top: 0;
+            width: 10rem;
+            height: 10rem;
+        }
     }
     &__close::before {
         content: '';
         display: block;
         position: absolute;
-        top: 48%;
-        right: 6%;
-        width: 3.3rem;
+        top: 1.8rem;
+        right: .9rem;
+        width: 2rem;
         height: 1px;
-        background: rgba(0, 0, 0, 1);
+        background: #fff;
         transform: rotate(-130deg);
+        @include respond(big-screen) {
+            top: 4.9rem;
+            width: 8rem;
+        }
     }
     &__close::after {
         content: '';
         display: block;
         position: absolute;
-        top: 48%;
-        right: 6%;
-        width: 3.3rem;
+        top: 1.8rem;
+        right: .9rem;
+        width: 2rem;
         height: 1px;
-        background: rgba(0, 0, 0, 1);
+        background: #fff;
         transform: rotate(130deg);
+        @include respond(big-screen) {
+            top: 4.9rem;
+            width: 8rem;
+        }
+    }
+    &__img {
+        display: block;
+        max-width: 100%;
+        max-height: 100%;
     }
 }
 .grab {

@@ -18,7 +18,7 @@
             grid-template-columns: 1fr 1fr 1fr;
         }
         @include respond(big-screen) {
-            gap: 5.7rem 2.8rem;
+            gap: 57px 28px;
         }
     }
     &__item {
@@ -122,7 +122,7 @@
     }
     &__list {
         @include respond(big-screen) {
-            margin: 2.8rem 0 0 2.9rem;
+            margin: 28px 0 0 29px;
         }
     }
     &__paragraph {
@@ -135,9 +135,9 @@
             font-size: 8.9px;
         }
         @include respond(big-screen) {
-            font-size: 2rem;
+            font-size: 20px;
             margin-top: 0;
-            margin-bottom: 2.1rem;
+            margin-bottom: 21px;
         }
     }
     &__paragraph:nth-child(2) {
@@ -178,6 +178,11 @@
             padding-top: 100px;
         } 
     }
+    &__popup-body {
+        @include respond(big-screen) {
+            height: 871px;
+        }
+    }
     &__content {
         margin: 0 auto;
         width: 30.3rem;
@@ -188,6 +193,7 @@
         } 
         @include respond(big-screen) {
             width: 1656px;
+            overflow: hidden;
         } 
     }
     &__content-top {
@@ -216,22 +222,7 @@
         @include respond(big-screen) {
             width: 951px;
             padding-left: 56px;
-        }
-    }
-    &__body-right::before {
-        @include respond(tab-port) {
-            content: '';
-            display: block;
-            width: 1px;
-            height: 543.5px;
-            position: absolute;
-            bottom: -67px;
-            left: 0;
-            background: #000;
-        }
-        @include respond(big-screen) {
-            height: 790px;
-            bottom: -80px;
+            border-left: 1px solid #000;
         }
     }
     &__body-left {
@@ -375,16 +366,25 @@
         @include respond(tab-port) {
             width: 406px;
         }
+        @include respond(big-screen) {
+            width: 750px;
+        }
     }
     &__popup-title_width-15 {
         @include respond(tab-port) {
             width: 406px;
+        }
+        @include respond(big-screen) {
+            width: 885px;
         }
     }
     &__popup-title_width-13 {
         width: 18rem;
         @include respond(tab-port) {
             width: 440px;
+        }
+        @include respond(big-screen) {
+            width: 876px;
         }
     }
     &__characteristics {
@@ -615,6 +615,16 @@
             margin-top: -60px;
         }
     }
+    &__house-img_desctop-20 {
+        @include respond(big-screen) {
+            margin-top: -164px;
+        }
+    }
+    &__house-img_desctop-22 {
+        @include respond(big-screen) {
+            margin-top: -121px;
+        }
+    }
     &__scheme-img_mobile {
         display: block;
         @include respond(tab-port) {
@@ -631,6 +641,7 @@
             margin-top: 7px;
         }
     }
+    
     &__scheme-img {
         img {
             width: 100%;

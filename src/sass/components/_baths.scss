@@ -18,8 +18,8 @@
         }
     }
     @include respond(big-screen) {
-        margin: 0 0 90px 217px;
-        padding: 0 0 10.7rem 0;
+        margin: 0 0 90px 400px;
+        padding: 0 0 107px 0;
         width: 1579px;
         font-size: 40px;
         span {
@@ -32,6 +32,11 @@
     &__item {
         @include respond(tab-port) {
             display: flex;
+            width: 1020px;
+            margin: 0 auto;
+        }
+        @include respond(big-screen) {
+            width: 1920px;
         }
     }
     &__item_mr {
@@ -107,7 +112,7 @@
         width: 27.3rem;
         @include respond(tab-port) {
             width: 812px;
-            padding-left: 32.5px;
+            padding-left: 8.5px;
         }
         @include respond(big-screen) {
             width: 90.4rem;
@@ -121,6 +126,7 @@
     &__desc-3 {
         @include respond(tab-port) {
             margin-top: 100px;
+            padding-left: 10px;
         }
     }
     &__desc-4 {
@@ -161,7 +167,7 @@
     }
     &__text_width-2 {
         @include respond(tab-port) {
-            width: 648px;
+            width: 535px;
         }
         @include respond(big-screen) {
             width: 81rem;
@@ -170,7 +176,8 @@
     &__text_width-3 {
         width: 27.6rem;
         @include respond(tab-port) {
-            width: 653px;
+            margin-left: 10px;
+            width: 534px;
         }
         @include respond(big-screen) {
             width: 87.7rem;
@@ -178,7 +185,7 @@
     }
     &__text_width-4 {
         @include respond(tab-port) {
-            width: 652px;
+            width: 514px;
         }
         @include respond(big-screen) {
             width: 84.1rem;

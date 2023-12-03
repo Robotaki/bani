@@ -40,8 +40,8 @@
             display: flex;
         }
         @include respond(big-screen) {
-            margin: 6.1rem auto 4.1rem;
-            width: 130rem;
+            margin: 61px auto 41px;
+            width: 1300px;
         }
     }
     &__list:not(:last-child) {
@@ -55,8 +55,8 @@
             margin-bottom: 25px;
         }
         @include respond(big-screen) {
-            width: 30.2rem;
-            font-size: 2.4rem;
+            width: 302px;
+            font-size: 24px;
         }
     }
     &__item {
@@ -64,7 +64,7 @@
             color: rgba(0, 0, 0, 1);
         }
         @include respond(big-screen) {
-            font-size: 2.4rem;
+            font-size: 24px;
         }
     }
     &__item:not(:last-child) {
@@ -85,8 +85,11 @@
         font-size: 1.3rem;
         color: rgba(0, 0, 0, 1);
         @include respond(big-screen) {
-            font-size: 2.4rem;
+            font-size: 24px;
         }
+    }
+    &__policy {
+        color: rgba(0, 0, 0, 1);
     }
     &__desc {
         margin: 0 auto 2.8rem;
@@ -99,8 +102,8 @@
             letter-spacing: .741px;
         }
         @include respond(big-screen) {
-            font-size: 1.6rem;
-            width: 114.2rem;
+            font-size: 16px;
+            width: 1142px;
         }
     }
     &__text {
@@ -117,8 +120,8 @@
             font-size: 16px;
         }
         @include respond(big-screen) {
-            font-size: 2.4rem;
-            width: 53.4rem;
+            font-size: 24px;
+            width: 534px;
         }
     }
     &__link-studio {
@@ -126,7 +129,7 @@
         color: rgba(255, 255, 255, 1);
     }
     @include respond(tab-port) {
-        margin: 0;
-        width: 100%;
+        margin: 0 auto;
+        width: 1020px;
     }
 }

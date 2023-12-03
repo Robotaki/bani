@@ -1,6 +1,9 @@
+.policy {
+    padding: 10rem 1rem 0;
+}
 .first__section {
     padding-top: 48.7rem;
-    background: url('../../img/mobile/first-section/bg.jpg') center / cover no-repeat;
+    background: url('../../img/desctop/first-section/bg.jpg') center / cover no-repeat;
     @include respond(tab-port) {
         padding-top: 0;
         background: url('../../img/desctop/first-section/bg.jpg') center / cover no-repeat;
